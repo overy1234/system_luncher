@@ -446,6 +446,10 @@
 "Assets/Scripts/Common/Logger.cs"
 "Assets/Scripts/Common/SceneLoader.cs"
 "Assets/Scripts/Common/SingletonBehaviour.cs"
+"Assets/Scripts/Common/UserData/IUserData.cs"
+"Assets/Scripts/Common/UserData/UserDataManager.cs"
+"Assets/Scripts/Common/UserData/UserGoodsData.cs"
+"Assets/Scripts/Common/UserData/UserSettingsData.cs"
 "Assets/Scripts/Title/TitleManager.cs"
 -langversion:9.0
 /deterministic

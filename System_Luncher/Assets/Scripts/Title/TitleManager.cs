@@ -26,12 +26,31 @@ public class TitleManager : MonoBehaviour
 
     private void Start()
     {
+        //유저 데이터 로드
+        UserDataManager.Instance.LoadUserData();
+
+        //저장된 유저 데이터가 없으면 기본값으로 세팅 후 저장
+        if (!UserDataManager.Instance.ExistsSavedData)
+        {
+            UserDataManager.Instance.SetDefaultUserData(); // 기본 데이터 설정
+            UserDataManager.Instance.SaveUserData(); // 기본 데이터 저장
+        }
+       
+
+        
+
         StartCoroutine(LoadGameCo());
     }
 
     private IEnumerator LoadGameCo()
     {
         Logger.Log($"{GetType()}::LoadGameCo");
+
+
+        
+
+
+
 
         LogoAnim.Play();
         yield return new WaitForSeconds(LogoAnim.clip.length);
