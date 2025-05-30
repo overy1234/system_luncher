@@ -35,8 +35,14 @@ public class TitleManager : MonoBehaviour
             UserDataManager.Instance.SetDefaultUserData(); // 기본 데이터 설정
             UserDataManager.Instance.SaveUserData(); // 기본 데이터 저장
         }
-       
 
+        //var confirmUIData = new ConfirmUIData();
+        //confirmUIData.ConfirmType = ConfirmType.OK_CANCEL;
+        //confirmUIData.TitleTxt = "UI Test";
+        //confirmUIData.DescTxt = "This is UI Text.";
+        //confirmUIData.OKBtnTxt = "확인";
+        //confirmUIData.CancelBtnTxt = "취소";
+        //UIManager.Instance.OpenUI<ConfirmUI>(confirmUIData);
         
 
         StartCoroutine(LoadGameCo());
