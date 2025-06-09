@@ -28,6 +28,9 @@ public class UserDataManager : SingletonBehaviour<UserDataManager>
         UserDataList.Add(new UserInventoryData());
         // 사용자 플레이 데이터를 리스트에 추가
         UserDataList.Add(new UserPlayData());
+
+        UserDataList.Add(new UserAchievementData());
+
     }
 
     // 모든 사용자 데이터를 기본값으로 설정하는 메서드

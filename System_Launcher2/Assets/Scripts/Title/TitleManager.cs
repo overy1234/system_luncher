@@ -84,7 +84,7 @@ public class TitleManager : MonoBehaviour
         */
         LoadingSlider.value = 0.5f;
         LoadingProgressTxt.text = $"{(int)(LoadingSlider.value * 100)}%";
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1);
 
         while (!m_AsyncOperation.isDone) //로딩이 진행 중일 때 
         {
