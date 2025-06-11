@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "634149055988",
+    "project_id": "jumpjump-6ad3d",
+    "storage_bucket": "jumpjump-6ad3d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634149055988:android:cccc9e9a2bf93f99fddda1",
+        "android_client_info": {
+          "package_name": "com.lionsoft.System_Launcher2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7_5dD3kxCtily8err679MQw2xq6LOutU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

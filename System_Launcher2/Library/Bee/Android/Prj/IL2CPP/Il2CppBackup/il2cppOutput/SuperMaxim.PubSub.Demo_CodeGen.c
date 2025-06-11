@@ -1,0 +1,197 @@
+﻿#include "pch-c.h"
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+
+
+
+extern void ChatController_Start_mA9CC970A49DFB95783F50DA11B54971CE3ECC4C8 (void);
+extern void ChatController_PayloadCommandPredicate_mF2F2F54579EB2AEED66A42B6F9AC1DFB9175418C (void);
+extern void ChatController_OnPayloadCommand_m1ED14BEA22FA168A1BC42244BAA218791755B8E5 (void);
+extern void ChatController_ChatMessagePredicate_m337F9A2E17F3781203F47E5B52F00B3EF99CA546 (void);
+extern void ChatController_OnChatMessage_mCBD08EE36550D0C151D630A8A68D67DDC97B72A3 (void);
+extern void ChatController_OnTextChanged_m448A7D2FF0DBE31087174C2BD7B3A5C1CF00F98D (void);
+extern void ChatController_OnTextEndEdit_m9B7070B1C00873A3451586094B458BA38ACFC108 (void);
+extern void ChatController_EnableInputFieldCoroutine_mB1C1042C61D0946515CDD68869FC2AFDC2DA4803 (void);
+extern void ChatController_PublishMessage_mF602CEDBD704025590404DEABBAC2C43293C4DB1 (void);
+extern void ChatController_KillMe_m5AF8B370B21031B5CC4F57C4F52FDF00C3B39413 (void);
+extern void ChatController_OnDestroy_m0C871F69336FCBEEAB4E4E7AB344626F7BAD1177 (void);
+extern void ChatController__ctor_mE101EDB01DEB60F28E7374D8885E7E710E08B5B3 (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16__ctor_m2A815650F5AC81FE2E54E7B3242DE351B78C86A4 (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16_System_IDisposable_Dispose_m5B6FE33C61C08982A4938AFEEC8C861B2A858626 (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16_MoveNext_m9976EA677CC4658C6580EAF0962DCA6A433F0276 (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB4739FF1F0E6230D0AE12A7C13F9229A9FFCC3B2 (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_IEnumerator_Reset_m8DA03AC2605E6C3CCBC990C776930B4510A2063A (void);
+extern void U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_IEnumerator_get_Current_m8D88EE7617EEC0A1015E43234109490D9B0EB99A (void);
+extern void ChatMsgCountController_Awake_m43D7559D5A2E20351A660904A460B8558F3E00D5 (void);
+extern void ChatMsgCountController_Start_m23EEABFF6F3735910F2922AA79B8518463388ADB (void);
+extern void ChatMsgCountController_ChatMessageFilter_m64557EA21374C6803B391FE4252238A936CC9FAF (void);
+extern void ChatMsgCountController_OnDestroy_m2904F70EBBE13C92F9B8230827C0498C8BD71294 (void);
+extern void ChatMsgCountController_OnChatMessageReceived_m92A08FE4E3B857A2138029AEBC8D871CD6DEAD73 (void);
+extern void ChatMsgCountController_KillMe_mB264B9D95E5F45B825BA52629EECBD877E041684 (void);
+extern void ChatMsgCountController__ctor_mACF3056DCA87543D4A1AADA44BA378EFF1D0CAB3 (void);
+extern void ChatPayload_get_UserId_mC045B4BA16B40C5DED8287807CD99CD2ABC70C02 (void);
+extern void ChatPayload_set_UserId_m67677B0F9C1345F3E7BC9101DE4995E8762AEE29 (void);
+extern void ChatPayload_get_Text_m2F3811781B651A4861028E05010C2C49CEF09CE1 (void);
+extern void ChatPayload_set_Text_m972F1D66B27899958180868F9D260626437FBDB7 (void);
+extern void ChatPayload_ToString_m48226A05948A74273E6D48E7B3677296E6203B6A (void);
+extern void ChatPayload__ctor_m6F294705683AE406BBACB707ADA6078B093741D3 (void);
+extern void MultiThreadingToggle_get_IsMultiThreadingOn_mAEE347D5A7A9C4368974D762165D7ED6B3D63EDF (void);
+extern void MultiThreadingToggle_set_IsMultiThreadingOn_m3BF217AD2CA980F89F0984C765198DAC60540D44 (void);
+extern void MultiThreadingToggle__ctor_m4F7B3612E8A4073F4B3ACCA95D981B650D13B108 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m54310032DFEC065C7A1F6300CE591C4D5F76AE18 (void);
+extern void UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m1C19A7DCFF20C656721357C6D9620288EC185DBA (void);
+static Il2CppMethodPointer s_methodPointers[43] = 
+{
+	ChatController_Start_mA9CC970A49DFB95783F50DA11B54971CE3ECC4C8,
+	ChatController_PayloadCommandPredicate_mF2F2F54579EB2AEED66A42B6F9AC1DFB9175418C,
+	ChatController_OnPayloadCommand_m1ED14BEA22FA168A1BC42244BAA218791755B8E5,
+	ChatController_ChatMessagePredicate_m337F9A2E17F3781203F47E5B52F00B3EF99CA546,
+	ChatController_OnChatMessage_mCBD08EE36550D0C151D630A8A68D67DDC97B72A3,
+	ChatController_OnTextChanged_m448A7D2FF0DBE31087174C2BD7B3A5C1CF00F98D,
+	ChatController_OnTextEndEdit_m9B7070B1C00873A3451586094B458BA38ACFC108,
+	ChatController_EnableInputFieldCoroutine_mB1C1042C61D0946515CDD68869FC2AFDC2DA4803,
+	ChatController_PublishMessage_mF602CEDBD704025590404DEABBAC2C43293C4DB1,
+	ChatController_KillMe_m5AF8B370B21031B5CC4F57C4F52FDF00C3B39413,
+	ChatController_OnDestroy_m0C871F69336FCBEEAB4E4E7AB344626F7BAD1177,
+	ChatController__ctor_mE101EDB01DEB60F28E7374D8885E7E710E08B5B3,
+	U3CEnableInputFieldCoroutineU3Ed__16__ctor_m2A815650F5AC81FE2E54E7B3242DE351B78C86A4,
+	U3CEnableInputFieldCoroutineU3Ed__16_System_IDisposable_Dispose_m5B6FE33C61C08982A4938AFEEC8C861B2A858626,
+	U3CEnableInputFieldCoroutineU3Ed__16_MoveNext_m9976EA677CC4658C6580EAF0962DCA6A433F0276,
+	U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_Generic_IEnumeratorU3CSystem_ObjectU3E_get_Current_mB4739FF1F0E6230D0AE12A7C13F9229A9FFCC3B2,
+	U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_IEnumerator_Reset_m8DA03AC2605E6C3CCBC990C776930B4510A2063A,
+	U3CEnableInputFieldCoroutineU3Ed__16_System_Collections_IEnumerator_get_Current_m8D88EE7617EEC0A1015E43234109490D9B0EB99A,
+	ChatMsgCountController_Awake_m43D7559D5A2E20351A660904A460B8558F3E00D5,
+	ChatMsgCountController_Start_m23EEABFF6F3735910F2922AA79B8518463388ADB,
+	ChatMsgCountController_ChatMessageFilter_m64557EA21374C6803B391FE4252238A936CC9FAF,
+	ChatMsgCountController_OnDestroy_m2904F70EBBE13C92F9B8230827C0498C8BD71294,
+	ChatMsgCountController_OnChatMessageReceived_m92A08FE4E3B857A2138029AEBC8D871CD6DEAD73,
+	ChatMsgCountController_KillMe_mB264B9D95E5F45B825BA52629EECBD877E041684,
+	ChatMsgCountController__ctor_mACF3056DCA87543D4A1AADA44BA378EFF1D0CAB3,
+	ChatPayload_get_UserId_mC045B4BA16B40C5DED8287807CD99CD2ABC70C02,
+	ChatPayload_set_UserId_m67677B0F9C1345F3E7BC9101DE4995E8762AEE29,
+	ChatPayload_get_Text_m2F3811781B651A4861028E05010C2C49CEF09CE1,
+	ChatPayload_set_Text_m972F1D66B27899958180868F9D260626437FBDB7,
+	ChatPayload_ToString_m48226A05948A74273E6D48E7B3677296E6203B6A,
+	ChatPayload__ctor_m6F294705683AE406BBACB707ADA6078B093741D3,
+	MultiThreadingToggle_get_IsMultiThreadingOn_mAEE347D5A7A9C4368974D762165D7ED6B3D63EDF,
+	MultiThreadingToggle_set_IsMultiThreadingOn_m3BF217AD2CA980F89F0984C765198DAC60540D44,
+	MultiThreadingToggle__ctor_m4F7B3612E8A4073F4B3ACCA95D981B650D13B108,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1_Get_m54310032DFEC065C7A1F6300CE591C4D5F76AE18,
+	UnitySourceGeneratedAssemblyMonoScriptTypes_v1__ctor_m1C19A7DCFF20C656721357C6D9620288EC185DBA,
+};
+static const int32_t s_InvokerIndices[43] = 
+{
+	11743,
+	17108,
+	9151,
+	6418,
+	9151,
+	9151,
+	9151,
+	11602,
+	9151,
+	11743,
+	11743,
+	11743,
+	9098,
+	11743,
+	11453,
+	11602,
+	11743,
+	11602,
+	11743,
+	11743,
+	6418,
+	11743,
+	9151,
+	11743,
+	11743,
+	11602,
+	9151,
+	11602,
+	9151,
+	11602,
+	11743,
+	11453,
+	9001,
+	11743,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	-1,
+	18812,
+	11743,
+};
+static const Il2CppTokenRangePair s_rgctxIndices[1] = 
+{
+	{ 0x02000007, { 0, 16 } },
+};
+extern const uint32_t g_rgctx_ThreadQueue_1_Stop_m7579BBC9AC7BC9D1596E6738601132C686EDD2BF;
+extern const uint32_t g_rgctx_ThreadQueue_1_Clear_mC87107AF3264AB828D5020600CAA8B172DE4C7E8;
+extern const uint32_t g_rgctx_ThreadQueue_1_tB764CC561361E6AF4D7257F598975D582B9AA2F2;
+extern const uint32_t g_rgctx_ConcurrentQueue_1_tC794B88BEEC3B549843DB1375F05B0A66CA89446;
+extern const uint32_t g_rgctx_ConcurrentQueue_1_TryDequeue_m3BF665DAC9093ECCE15E33D81E1D6B3E7D292777;
+extern const uint32_t g_rgctx_Tuple_2U26_t0D08DC855C34216708CF5020658504676794FF19;
+extern const uint32_t g_rgctx_Tuple_2_tA6F1B0DE16F61D93232DE382780BD0F275CC3341;
+extern const uint32_t g_rgctx_Tuple_2_get_Item1_mE94B22A3C887C98D64990DD87D4E1ED6C44DD4C9;
+extern const uint32_t g_rgctx_Tuple_2_get_Item2_m4DDA9F76EA6A05B64C5F0A28BBBD0C421C1F9723;
+extern const uint32_t g_rgctx_T_t6F1069CAD2F50D284D7E3BB424C419F99E3D89A0;
+extern const uint32_t g_rgctx_ConcurrentQueue_1_get_Count_mE3574F48695051A85202B73506B56C3ABBE45D99;
+extern const uint32_t g_rgctx_ThreadQueue_1_OnTick_mE056BA29389C86745336C05FAF6E983CF3856E4E;
+extern const uint32_t g_rgctx_Action_1_tEFD405EDEE72B8FB18F13FA2B6AD8FDED4F7CD3C;
+extern const uint32_t g_rgctx_Tuple_2__ctor_m79399A1C29AF1190FE954462F453BD1B065D540F;
+extern const uint32_t g_rgctx_ConcurrentQueue_1_Enqueue_m65C779ADD99BC7DF091795DE01DAFFCCFB60C4E3;
+extern const uint32_t g_rgctx_ConcurrentQueue_1__ctor_m75F4928E7B1B87F898A983A6081ED689137703C3;
+static const Il2CppRGCTXDefinition s_rgctxValues[16] = 
+{
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ThreadQueue_1_Stop_m7579BBC9AC7BC9D1596E6738601132C686EDD2BF },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ThreadQueue_1_Clear_mC87107AF3264AB828D5020600CAA8B172DE4C7E8 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ThreadQueue_1_tB764CC561361E6AF4D7257F598975D582B9AA2F2 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_ConcurrentQueue_1_tC794B88BEEC3B549843DB1375F05B0A66CA89446 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ConcurrentQueue_1_TryDequeue_m3BF665DAC9093ECCE15E33D81E1D6B3E7D292777 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Tuple_2U26_t0D08DC855C34216708CF5020658504676794FF19 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Tuple_2_tA6F1B0DE16F61D93232DE382780BD0F275CC3341 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Tuple_2_get_Item1_mE94B22A3C887C98D64990DD87D4E1ED6C44DD4C9 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Tuple_2_get_Item2_m4DDA9F76EA6A05B64C5F0A28BBBD0C421C1F9723 },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_T_t6F1069CAD2F50D284D7E3BB424C419F99E3D89A0 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ConcurrentQueue_1_get_Count_mE3574F48695051A85202B73506B56C3ABBE45D99 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ThreadQueue_1_OnTick_mE056BA29389C86745336C05FAF6E983CF3856E4E },
+	{ (Il2CppRGCTXDataType)2, (const void *)&g_rgctx_Action_1_tEFD405EDEE72B8FB18F13FA2B6AD8FDED4F7CD3C },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_Tuple_2__ctor_m79399A1C29AF1190FE954462F453BD1B065D540F },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ConcurrentQueue_1_Enqueue_m65C779ADD99BC7DF091795DE01DAFFCCFB60C4E3 },
+	{ (Il2CppRGCTXDataType)3, (const void *)&g_rgctx_ConcurrentQueue_1__ctor_m75F4928E7B1B87F898A983A6081ED689137703C3 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_SuperMaxim_PubSub_Demo_CodeGenModule;
+const Il2CppCodeGenModule g_SuperMaxim_PubSub_Demo_CodeGenModule = 
+{
+	"SuperMaxim.PubSub.Demo.dll",
+	43,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	0,
+	NULL,
+	1,
+	s_rgctxIndices,
+	16,
+	s_rgctxValues,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+	NULL,
+};

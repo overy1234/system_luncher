@@ -38,7 +38,7 @@ public class InGameManager : SingletonBehaviour<InGameManager>
 
         m_StageTrs = GameObject.Find("Stage").transform;
         m_Bg = GameObject.Find("Bg").GetComponent<SpriteRenderer>();
-        m_CurrStage = 20;
+        m_CurrStage = 1;
 
         var userPlayData = UserDataManager.Instance.GetUserData<UserPlayData>();
         if (userPlayData == null)
@@ -97,12 +97,12 @@ public class InGameManager : SingletonBehaviour<InGameManager>
         InGameUIController.Init();
 
 
-        var userAchievementData = UserDataManager.Instance.GetUserData<UserAchievementData>();
-        if (userAchievementData != null)
-        {
-            userAchievementData.ProgressAchievement(AchievementType.ClearChapter1, 1);
-            userAchievementData.ProgressAchievement(AchievementType.ClearChapter3, 1);
-        }
+        //var userAchievementData = UserDataManager.Instance.GetUserData<UserAchievementData>();
+        //if (userAchievementData != null)
+        //{
+        //    userAchievementData.ProgressAchievement(AchievementType.ClearChapter1, 1);
+        //    userAchievementData.ProgressAchievement(AchievementType.ClearChapter3, 1);
+        //}
 
 
 

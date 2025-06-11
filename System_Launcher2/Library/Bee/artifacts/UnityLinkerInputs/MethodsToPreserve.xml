@@ -1,0 +1,66 @@
+<linker>
+	<assembly fullname="Assembly-CSharp" ignoreIfMissing="1">
+		<type fullname="AchievementItem">
+			<method name="OnClickClaimBtn"/>
+		</type>
+		<type fullname="BaseUI">
+			<method name="OnClickCloseButton"/>
+			<method name="OnClickCloseButton"/>
+			<method name="OnClickCloseButton"/>
+			<method name="OnClickCloseButton"/>
+			<method name="OnClickCloseButton"/>
+		</type>
+		<type fullname="ChapterClearUI">
+			<method name="OnClickHomeBtn"/>
+		</type>
+		<type fullname="ChapterListUI">
+			<method name="OnClickSelect"/>
+		</type>
+		<type fullname="ConfirmUI">
+			<method name="OnClickCancelBtn"/>
+			<method name="OnClickOKBtn"/>
+		</type>
+		<type fullname="EquipmentUI">
+			<method name="OnClickEquipBtn"/>
+		</type>
+		<type fullname="EquippedItemSlot">
+			<method name="OnClickEquippedItemSlot"/>
+			<method name="OnClickEquippedItemSlot"/>
+			<method name="OnClickEquippedItemSlot"/>
+			<method name="OnClickEquippedItemSlot"/>
+			<method name="OnClickEquippedItemSlot"/>
+			<method name="OnClickEquippedItemSlot"/>
+		</type>
+		<type fullname="InGameUIController">
+			<method name="OnClickPauseBtn"/>
+			<method name="OnClickPauseBtn"/>
+		</type>
+		<type fullname="InventoryItemSlot">
+			<method name="OnClickInventoryItemSlot"/>
+		</type>
+		<type fullname="InventoryUI">
+			<method name="OnClickSortBtn"/>
+		</type>
+		<type fullname="LobbyUIController">
+			<method name="OnClickAchievementBtn"/>
+			<method name="OnClickAchievementBtn"/>
+			<method name="OnClickCurrChapter"/>
+			<method name="OnClickCurrChapter"/>
+			<method name="OnClickProfileBtn"/>
+			<method name="OnClickProfileBtn"/>
+			<method name="OnClickSettingsBtn"/>
+			<method name="OnClickSettingsBtn"/>
+			<method name="OnClickStartBtn"/>
+			<method name="OnClickStartBtn"/>
+		</type>
+		<type fullname="PauseUI">
+			<method name="OnClickHome"/>
+			<method name="OnClickResume"/>
+		</type>
+		<type fullname="SettingsUI">
+			<method name="OnClickPrivacyPolicyBtn"/>
+			<method name="OnClickSoundOffToggle"/>
+			<method name="OnClickSoundOnToggle"/>
+		</type>
+	</assembly>
+</linker>

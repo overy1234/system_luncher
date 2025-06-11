@@ -1,0 +1,7 @@
+#Tue Jun 10 11:39:27 KST 2025
+base.1=C\:\\system_luncher\\System_Launcher2\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\global_synthetics_dex\\release\\mergeReleaseGlobalSynthetics\\classes.dex
+path.1=classes.dex
+base.0=C\:\\system_luncher\\System_Launcher2\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

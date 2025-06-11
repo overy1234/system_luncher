@@ -1,0 +1,169 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.unity3d.player" >
+5
+6    <uses-sdk android:minSdkVersion="23" />
+7
+8    <uses-permission android:name="android.permission.INTERNET" />
+8-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:3-65
+8-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:3:20-62
+9    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+9-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:3-77
+9-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:20-74
+10
+11    <uses-feature android:glEsVersion="0x00030000" />
+11-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:3-52
+11-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:5:17-49
+12    <uses-feature
+12-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:3-91
+13        android:name="android.hardware.vulkan.version"
+13-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:17-63
+14        android:required="false" />
+14-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:6:64-88
+15    <uses-feature
+15-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:3-88
+16        android:name="android.hardware.touchscreen"
+16-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:17-60
+17        android:required="false" />
+17-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:7:61-85
+18    <uses-feature
+18-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:3-99
+19        android:name="android.hardware.touchscreen.multitouch"
+19-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:17-71
+20        android:required="false" />
+20-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:8:72-96
+21    <uses-feature
+21-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:3-108
+22        android:name="android.hardware.touchscreen.multitouch.distinct"
+22-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:17-80
+23        android:required="false" />
+23-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:9:81-105
+24
+25    <application
+25-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:3-31:17
+26        android:enableOnBackInvokedCallback="false"
+26-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:16-59
+27        android:extractNativeLibs="true" >
+27-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:10:60-92
+28        <meta-data
+28-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:5-69
+29            android:name="unity.splash-mode"
+29-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:16-48
+30            android:value="0" />
+30-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:11:49-66
+31        <meta-data
+31-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:5-74
+32            android:name="unity.splash-enable"
+32-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:16-50
+33            android:value="True" />
+33-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:12:51-71
+34        <meta-data
+34-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:5-78
+35            android:name="unity.launch-fullscreen"
+35-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:16-54
+36            android:value="True" />
+36-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:13:55-75
+37        <meta-data
+37-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:5-84
+38            android:name="unity.render-outside-safearea"
+38-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:16-60
+39            android:value="True" />
+39-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:14:61-81
+40        <meta-data
+40-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:5-81
+41            android:name="notch.config"
+41-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:16-43
+42            android:value="portrait|landscape" />
+42-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:15:44-78
+43        <meta-data
+43-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:5-84
+44            android:name="unity.auto-report-fully-drawn"
+44-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:16-60
+45            android:value="true" />
+45-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:16:61-81
+46        <meta-data
+46-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:5-80
+47            android:name="unity.auto-set-game-state"
+47-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:16-56
+48            android:value="true" />
+48-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:17:57-77
+49        <meta-data
+49-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:5-78
+50            android:name="unity.strip-engine-code"
+50-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:16-54
+51            android:value="true" />
+51-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:18:55-75
+52
+53        <activity
+53-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:5-30:16
+54            android:name="com.unity3d.player.UnityPlayerGameActivity"
+54-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:312-369
+55            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+55-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:15-196
+56            android:enabled="true"
+56-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:197-219
+57            android:exported="true"
+57-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:220-243
+58            android:hardwareAccelerated="false"
+58-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:244-279
+59            android:launchMode="singleTask"
+59-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:280-311
+60            android:resizeableActivity="true"
+60-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:370-403
+61            android:screenOrientation="userPortrait"
+61-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:404-444
+62            android:theme="@style/BaseUnityGameActivityTheme" >
+62-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:19:445-494
+63            <intent-filter>
+63-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:20:7-23:23
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:9-69
+64-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:21:19-66
+65
+66                <action android:name="android.intent.action.MAIN" />
+66-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:9-61
+66-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:22:17-58
+67            </intent-filter>
+68
+69            <meta-data
+69-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:7-82
+70                android:name="unityplayer.UnityActivity"
+70-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:18-58
+71                android:value="true" />
+71-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:24:59-79
+72            <meta-data
+72-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:7-77
+73                android:name="android.app.lib_name"
+73-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:18-53
+74                android:value="game" />
+74-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:25:54-74
+75            <meta-data
+75-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:7-130
+76                android:name="WindowManagerPreference:FreeformWindowSize"
+76-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:18-75
+77                android:value="@string/FreeformWindowSize_maximize" />
+77-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:26:76-127
+78            <meta-data
+78-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:7-144
+79                android:name="WindowManagerPreference:FreeformWindowOrientation"
+79-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:18-82
+80                android:value="@string/FreeformWindowOrientation_portrait" />
+80-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:27:83-141
+81            <meta-data
+81-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:7-70
+82                android:name="notch_support"
+82-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:18-46
+83                android:value="true" />
+83-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:28:47-67
+84
+85            <layout
+85-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:7-70
+86                android:minHeight="1920px"
+86-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:15-41
+87                android:minWidth="1080px" />
+87-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:29:42-67
+88        </activity>
+89    </application>
+90
+91</manifest>
