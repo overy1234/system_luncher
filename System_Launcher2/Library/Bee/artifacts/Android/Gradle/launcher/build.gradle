@@ -20,10 +20,10 @@ android {
 
     defaultConfig {
         applicationId "com.lionsoft.System_Launcher2"
-        versionName "1.0"
-        minSdk 23
+        versionName "1.1.0"
+        minSdk 24
         targetSdk 36
-        versionCode 1
+        versionCode 5
 
         ndk {
             abiFilters "armeabi-v7a", "arm64-v8a"
@@ -68,19 +68,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt')
             signingConfig signingConfigs.release
         }
-    }
-
-    androidComponents {
-        onVariants(selector().all(), { variant ->
-            variant.bundleConfig.addMetadataFile(
-                "com.unity",
-                project.layout.file(project.providers.provider { new File("dependencies.pb") })
-            )
-            variant.bundleConfig.addMetadataFile(
-                "com.unity",
-                project.layout.file(project.providers.provider { new File("app-metadata.properties") })
-            )
-        })
     }
 
     bundle {

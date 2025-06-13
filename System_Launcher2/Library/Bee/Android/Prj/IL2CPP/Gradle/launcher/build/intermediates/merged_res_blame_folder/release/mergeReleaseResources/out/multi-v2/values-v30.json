@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.lionsoft.System_Launcher2.launcher-mergeReleaseResources-19:/values-v30/values-v30.xml",
+            "outputFile": "com.lionsoft.System_Launcher2.launcher-mergeReleaseResources-29:/values-v30/values-v30.xml",
             "map": [
                 {
                     "source": "C:\\system_luncher\\System_Launcher2\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\unityLibrary\\build\\intermediates\\packaged_res\\release\\packageReleaseResources\\values-v30\\values-v30.xml",

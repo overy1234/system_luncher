@@ -2,11 +2,11 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.lionsoft.System_Launcher2"
 4    android:installLocation="auto"
-5    android:versionCode="1"
-6    android:versionName="1.0" >
+5    android:versionCode="5"
+6    android:versionName="1.1.0" >
 7
 8    <uses-sdk
-9        android:minSdkVersion="23"
+9        android:minSdkVersion="24"
 10        android:targetSdkVersion="36" />
 11
 12    <supports-screens
@@ -57,170 +57,477 @@
 34        android:required="false" />
 34-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:23:9-33
 35
-36    <permission
-36-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
-37        android:name="com.lionsoft.System_Launcher2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-37-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
-38        android:protectionLevel="signature" />
-38-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
-39
-40    <uses-permission android:name="com.lionsoft.System_Launcher2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
-40-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
-40-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
-41
-42    <application
-42-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
-43        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-43-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
-44        android:enableOnBackInvokedCallback="false"
-44-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:26:9-52
-45        android:extractNativeLibs="true"
-46        android:icon="@mipmap/app_icon"
-46-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-47
-47        android:label="@string/app_name"
-47-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:48-80
-48        android:roundIcon="@mipmap/app_icon_round" >
-48-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:81-123
-49        <meta-data
-49-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:9-30:33
-50            android:name="unity.splash-mode"
-50-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:29:13-45
-51            android:value="0" />
-51-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:30:13-30
-52        <meta-data
-52-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:31:9-33:36
-53            android:name="unity.splash-enable"
-53-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:32:13-47
-54            android:value="True" />
-54-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:33:13-33
-55        <meta-data
-55-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:34:9-36:36
-56            android:name="unity.launch-fullscreen"
-56-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:35:13-51
-57            android:value="True" />
-57-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:36:13-33
-58        <meta-data
-58-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:37:9-39:36
-59            android:name="unity.render-outside-safearea"
-59-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:38:13-57
-60            android:value="True" />
-60-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:39:13-33
-61        <meta-data
-61-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:40:9-42:50
-62            android:name="notch.config"
-62-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:41:13-40
-63            android:value="portrait|landscape" />
-63-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:42:13-47
-64        <meta-data
-64-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:43:9-45:36
-65            android:name="unity.auto-report-fully-drawn"
-65-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:44:13-57
-66            android:value="true" />
-66-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:45:13-33
-67        <meta-data
-67-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:46:9-48:36
-68            android:name="unity.auto-set-game-state"
-68-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:47:13-53
-69            android:value="true" />
-69-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:48:13-33
-70        <meta-data
-70-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:49:9-51:36
-71            android:name="unity.strip-engine-code"
-71-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:50:13-51
-72            android:value="true" />
-72-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:51:13-33
-73
-74        <activity
-74-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:53:9-88:20
-75            android:name="com.unity3d.player.UnityPlayerGameActivity"
-75-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:54:13-70
-76            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-76-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:55:13-194
-77            android:enabled="true"
-77-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:56:13-35
-78            android:exported="true"
-78-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:57:13-36
-79            android:hardwareAccelerated="false"
-79-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:58:13-48
-80            android:launchMode="singleTask"
-80-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:59:13-44
-81            android:resizeableActivity="true"
-81-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-46
-82            android:screenOrientation="userPortrait"
-82-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:61:13-53
-83            android:theme="@style/BaseUnityGameActivityTheme" >
-83-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:62:13-62
-84            <intent-filter>
-84-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:13-67:29
-85                <category android:name="android.intent.category.LAUNCHER" />
-85-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:64:17-77
-85-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:64:27-74
-86
-87                <action android:name="android.intent.action.MAIN" />
-87-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:66:17-69
-87-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:66:25-66
-88            </intent-filter>
-89
-90            <meta-data
-90-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:69:13-71:40
-91                android:name="unityplayer.UnityActivity"
-91-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:70:17-57
-92                android:value="true" />
-92-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:71:17-37
-93            <meta-data
-93-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:72:13-74:40
-94                android:name="android.app.lib_name"
-94-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:73:17-52
-95                android:value="game" />
-95-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:74:17-37
-96            <meta-data
-96-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:75:13-77:71
-97                android:name="WindowManagerPreference:FreeformWindowSize"
-97-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:76:17-74
-98                android:value="@string/FreeformWindowSize_maximize" />
-98-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:77:17-68
-99            <meta-data
-99-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:78:13-80:78
-100                android:name="WindowManagerPreference:FreeformWindowOrientation"
-100-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:79:17-81
-101                android:value="@string/FreeformWindowOrientation_portrait" />
-101-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:80:17-75
-102            <meta-data
-102-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:81:13-83:40
-103                android:name="notch_support"
-103-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:82:17-45
-104                android:value="true" />
-104-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:83:17-37
-105
-106            <layout
-106-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:85:13-87:45
-107                android:minHeight="1920px"
-107-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:86:17-43
-108                android:minWidth="1080px" />
-108-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:87:17-42
-109        </activity>
-110
-111        <provider
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-112            android:name="androidx.startup.InitializationProvider"
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
-113            android:authorities="com.lionsoft.System_Launcher2.androidx-startup"
-113-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
-114            android:exported="false" >
-114-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
-115            <meta-data
-115-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-116                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-116-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
-117                android:value="androidx.startup" />
-117-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
-118            <meta-data
-118-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-119                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-119-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-120                android:value="androidx.startup" />
-120-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-121        </provider>
-122    </application>
-123
-124</manifest>
+36    <uses-permission android:name="android.permission.WAKE_LOCK" />
+36-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:25:5-68
+36-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:25:22-65
+37    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+37-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:5-110
+37-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:26:22-107
+38    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+38-->[com.google.android.gms:play-services-measurement-impl:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77073641dd79731325c726939162ea87\transformed\jetified-play-services-measurement-impl-22.4.0\AndroidManifest.xml:27:5-79
+38-->[com.google.android.gms:play-services-measurement-impl:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77073641dd79731325c726939162ea87\transformed\jetified-play-services-measurement-impl-22.4.0\AndroidManifest.xml:27:22-76
+39    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_ATTRIBUTION" />
+39-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:5-88
+39-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:26:22-85
+40    <uses-permission android:name="android.permission.ACCESS_ADSERVICES_AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:5-82
+40-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:27:22-79
+41    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+41-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\overy\.gradle\caches\8.11\transforms\74a9a03a1c4882ff4a45a0ab167a136b\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:5-98
+41-->[com.google.android.recaptcha:recaptcha:18.6.1] C:\Users\overy\.gradle\caches\8.11\transforms\74a9a03a1c4882ff4a45a0ab167a136b\transformed\jetified-recaptcha-18.6.1\AndroidManifest.xml:9:22-95
+42
+43    <permission
+43-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+44        android:name="com.lionsoft.System_Launcher2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+44-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+45        android:protectionLevel="signature" />
+45-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+46
+47    <uses-permission android:name="com.lionsoft.System_Launcher2.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+47-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+47-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+48
+49    <application
+49-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:3-126
+50        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+50-->[androidx.core:core:1.9.0] C:\Users\overy\.gradle\caches\8.11\transforms\01b0759c45be5acd57b988c62a807a3d\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+51        android:enableOnBackInvokedCallback="false"
+51-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:26:9-52
+52        android:extractNativeLibs="true"
+53        android:icon="@mipmap/app_icon"
+53-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:16-47
+54        android:label="@string/app_name"
+54-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:48-80
+55        android:roundIcon="@mipmap/app_icon_round" >
+55-->C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\launcher\src\main\AndroidManifest.xml:3:81-123
+56        <meta-data
+56-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:28:9-30:33
+57            android:name="unity.splash-mode"
+57-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:29:13-45
+58            android:value="0" />
+58-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:30:13-30
+59        <meta-data
+59-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:31:9-33:36
+60            android:name="unity.splash-enable"
+60-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:32:13-47
+61            android:value="True" />
+61-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:33:13-33
+62        <meta-data
+62-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:34:9-36:36
+63            android:name="unity.launch-fullscreen"
+63-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:35:13-51
+64            android:value="True" />
+64-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:36:13-33
+65        <meta-data
+65-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:37:9-39:36
+66            android:name="unity.render-outside-safearea"
+66-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:38:13-57
+67            android:value="True" />
+67-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:39:13-33
+68        <meta-data
+68-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:40:9-42:50
+69            android:name="notch.config"
+69-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:41:13-40
+70            android:value="portrait|landscape" />
+70-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:42:13-47
+71        <meta-data
+71-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:43:9-45:36
+72            android:name="unity.auto-report-fully-drawn"
+72-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:44:13-57
+73            android:value="true" />
+73-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:45:13-33
+74        <meta-data
+74-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:46:9-48:36
+75            android:name="unity.auto-set-game-state"
+75-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:47:13-53
+76            android:value="true" />
+76-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:48:13-33
+77        <meta-data
+77-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:49:9-51:36
+78            android:name="unity.strip-engine-code"
+78-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:50:13-51
+79            android:value="true" />
+79-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:51:13-33
+80
+81        <activity
+81-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:53:9-88:20
+82            android:name="com.unity3d.player.UnityPlayerGameActivity"
+82-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:54:13-70
+83            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
+83-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:55:13-194
+84            android:enabled="true"
+84-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:56:13-35
+85            android:exported="true"
+85-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:57:13-36
+86            android:hardwareAccelerated="false"
+86-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:58:13-48
+87            android:launchMode="singleTask"
+87-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:59:13-44
+88            android:resizeableActivity="true"
+88-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:60:13-46
+89            android:screenOrientation="userPortrait"
+89-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:61:13-53
+90            android:theme="@style/BaseUnityGameActivityTheme" >
+90-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:62:13-62
+91            <intent-filter>
+91-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:63:13-67:29
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:64:17-77
+92-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:64:27-74
+93
+94                <action android:name="android.intent.action.MAIN" />
+94-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:66:17-69
+94-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:66:25-66
+95            </intent-filter>
+96
+97            <meta-data
+97-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:69:13-71:40
+98                android:name="unityplayer.UnityActivity"
+98-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:70:17-57
+99                android:value="true" />
+99-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:71:17-37
+100            <meta-data
+100-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:72:13-74:40
+101                android:name="android.app.lib_name"
+101-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:73:17-52
+102                android:value="game" />
+102-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:74:17-37
+103            <meta-data
+103-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:75:13-77:71
+104                android:name="WindowManagerPreference:FreeformWindowSize"
+104-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:76:17-74
+105                android:value="@string/FreeformWindowSize_maximize" />
+105-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:77:17-68
+106            <meta-data
+106-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:78:13-80:78
+107                android:name="WindowManagerPreference:FreeformWindowOrientation"
+107-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:79:17-81
+108                android:value="@string/FreeformWindowOrientation_portrait" />
+108-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:80:17-75
+109            <meta-data
+109-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:81:13-83:40
+110                android:name="notch_support"
+110-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:82:17-45
+111                android:value="true" />
+111-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:83:17-37
+112
+113            <layout
+113-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:85:13-87:45
+114                android:minHeight="1920px"
+114-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:86:17-43
+115                android:minWidth="1080px" />
+115-->[:unityLibrary] C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml:87:17-42
+116        </activity>
+117        <activity
+117-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:29:9-46:20
+118            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+118-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:30:13-80
+119            android:excludeFromRecents="true"
+119-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:31:13-46
+120            android:exported="true"
+120-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:32:13-36
+121            android:launchMode="singleTask"
+121-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:33:13-44
+122            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+122-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:34:13-72
+123            <intent-filter>
+123-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:35:13-45:29
+124                <action android:name="android.intent.action.VIEW" />
+124-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+124-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+125
+126                <category android:name="android.intent.category.DEFAULT" />
+126-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+126-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+127                <category android:name="android.intent.category.BROWSABLE" />
+127-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+127-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+128
+129                <data
+129-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+130                    android:host="firebase.auth"
+130-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+131                    android:path="/"
+131-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+132                    android:scheme="genericidp" />
+132-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+133            </intent-filter>
+134        </activity>
+135        <activity
+135-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:47:9-64:20
+136            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+136-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:48:13-79
+137            android:excludeFromRecents="true"
+137-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:49:13-46
+138            android:exported="true"
+138-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:50:13-36
+139            android:launchMode="singleTask"
+139-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:51:13-44
+140            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+140-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:52:13-72
+141            <intent-filter>
+141-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:53:13-63:29
+142                <action android:name="android.intent.action.VIEW" />
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:17-69
+142-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:36:25-66
+143
+144                <category android:name="android.intent.category.DEFAULT" />
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:17-76
+144-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:38:27-73
+145                <category android:name="android.intent.category.BROWSABLE" />
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:17-78
+145-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:39:27-75
+146
+147                <data
+147-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:41:17-44:51
+148                    android:host="firebase.auth"
+148-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:42:21-49
+149                    android:path="/"
+149-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:43:21-37
+150                    android:scheme="recaptcha" />
+150-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:44:21-48
+151            </intent-filter>
+152        </activity>
+153
+154        <service
+154-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:66:9-72:19
+155            android:name="com.google.firebase.components.ComponentDiscoveryService"
+155-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:67:13-84
+156            android:directBootAware="true"
+156-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:32:13-43
+157            android:exported="false" >
+157-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:68:13-37
+158            <meta-data
+158-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:69:13-71:85
+159                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+159-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:70:17-109
+160                android:value="com.google.firebase.components.ComponentRegistrar" />
+160-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\4eaf51de039e2e35d5940fc8125c324f\transformed\jetified-firebase-auth-23.2.0\AndroidManifest.xml:71:17-82
+161            <meta-data
+161-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:29:13-31:85
+162                android:name="com.google.firebase.components:com.google.firebase.database.FirebaseDatabaseKtxRegistrar"
+162-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:30:17-120
+163                android:value="com.google.firebase.components.ComponentRegistrar" />
+163-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:31:17-82
+164            <meta-data
+164-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:32:13-34:85
+165                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+165-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:33:17-109
+166                android:value="com.google.firebase.components.ComponentRegistrar" />
+166-->[com.google.firebase:firebase-database:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\91772bcb713c397999ca6ca6b205d442\transformed\jetified-firebase-database-21.0.0\AndroidManifest.xml:34:17-82
+167            <meta-data
+167-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:17:13-19:85
+168                android:name="com.google.firebase.components:com.google.firebase.firestore.FirebaseFirestoreKtxRegistrar"
+168-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:18:17-122
+169                android:value="com.google.firebase.components.ComponentRegistrar" />
+169-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:19:17-82
+170            <meta-data
+170-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:20:13-22:85
+171                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+171-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:21:17-111
+172                android:value="com.google.firebase.components.ComponentRegistrar" />
+172-->[com.google.firebase:firebase-firestore:25.1.3] C:\Users\overy\.gradle\caches\8.11\transforms\408a4813b9b44e4ad0a47614593dba36\transformed\jetified-firebase-firestore-25.1.3\AndroidManifest.xml:22:17-82
+173            <meta-data
+173-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:29:13-31:85
+174                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.FirebaseRemoteConfigKtxRegistrar"
+174-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:30:17-128
+175                android:value="com.google.firebase.components.ComponentRegistrar" />
+175-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:31:17-82
+176            <meta-data
+176-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:32:13-34:85
+177                android:name="com.google.firebase.components:com.google.firebase.remoteconfig.RemoteConfigRegistrar"
+177-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:33:17-117
+178                android:value="com.google.firebase.components.ComponentRegistrar" />
+178-->[com.google.firebase:firebase-config:22.1.0] C:\Users\overy\.gradle\caches\8.11\transforms\52813946607025cc78477083c58b2e03\transformed\jetified-firebase-config-22.1.0\AndroidManifest.xml:34:17-82
+179            <meta-data
+179-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:33:13-35:85
+180                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+180-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:34:17-139
+181                android:value="com.google.firebase.components.ComponentRegistrar" />
+181-->[com.google.android.gms:play-services-measurement-api:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\77d9aeac598951f14f63524007c1eddc\transformed\jetified-play-services-measurement-api-22.4.0\AndroidManifest.xml:35:17-82
+182            <meta-data
+182-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:15:13-17:85
+183                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsKtxRegistrar"
+183-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:16:17-130
+184                android:value="com.google.firebase.components.ComponentRegistrar" />
+184-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:17:17-82
+185            <meta-data
+185-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:18:13-20:85
+186                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+186-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:19:17-127
+187                android:value="com.google.firebase.components.ComponentRegistrar" />
+187-->[com.google.firebase:firebase-installations:17.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\08d44fa12558a0b5a7e9527016f56067\transformed\jetified-firebase-installations-17.2.0\AndroidManifest.xml:20:17-82
+188            <meta-data
+188-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\cc9557a0fd28c4956b05e1e8266a1886\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:12:13-14:85
+189                android:name="com.google.firebase.components:com.google.firebase.ktx.FirebaseCommonLegacyRegistrar"
+189-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\cc9557a0fd28c4956b05e1e8266a1886\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:13:17-116
+190                android:value="com.google.firebase.components.ComponentRegistrar" />
+190-->[com.google.firebase:firebase-common-ktx:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\cc9557a0fd28c4956b05e1e8266a1886\transformed\jetified-firebase-common-ktx-21.0.0\AndroidManifest.xml:14:17-82
+191            <meta-data
+191-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:35:13-37:85
+192                android:name="com.google.firebase.components:com.google.firebase.FirebaseCommonKtxRegistrar"
+192-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:36:17-109
+193                android:value="com.google.firebase.components.ComponentRegistrar" />
+193-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:37:17-82
+194            <meta-data
+194-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\overy\.gradle\caches\8.11\transforms\8893da358d2ea6d575f0d3c114ba1961\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:12:13-14:85
+195                android:name="com.google.firebase.components:com.google.firebase.abt.component.AbtRegistrar"
+195-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\overy\.gradle\caches\8.11\transforms\8893da358d2ea6d575f0d3c114ba1961\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:13:17-109
+196                android:value="com.google.firebase.components.ComponentRegistrar" />
+196-->[com.google.firebase:firebase-abt:21.1.1] C:\Users\overy\.gradle\caches\8.11\transforms\8893da358d2ea6d575f0d3c114ba1961\transformed\jetified-firebase-abt-21.1.1\AndroidManifest.xml:14:17-82
+197        </service>
+198        <service
+198-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:24:9-32:19
+199            android:name="androidx.credentials.playservices.CredentialProviderMetadataHolder"
+199-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:25:13-94
+200            android:enabled="true"
+200-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:26:13-35
+201            android:exported="false" >
+201-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:27:13-37
+202            <meta-data
+202-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:29:13-31:104
+203                android:name="androidx.credentials.CREDENTIAL_PROVIDER_KEY"
+203-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:30:17-76
+204                android:value="androidx.credentials.playservices.CredentialProviderPlayServicesImpl" />
+204-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:31:17-101
+205        </service>
+206
+207        <activity
+207-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:34:9-41:20
+208            android:name="androidx.credentials.playservices.HiddenActivity"
+208-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:35:13-76
+209            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden"
+209-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:36:13-87
+210            android:enabled="true"
+210-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:37:13-35
+211            android:exported="false"
+211-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:38:13-37
+212            android:fitsSystemWindows="true"
+212-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:39:13-45
+213            android:theme="@style/Theme.Hidden" >
+213-->[androidx.credentials:credentials-play-services-auth:1.2.0-rc01] C:\Users\overy\.gradle\caches\8.11\transforms\be6bf4001c8ad1ac562392a1427b6828\transformed\jetified-credentials-play-services-auth-1.2.0-rc01\AndroidManifest.xml:40:13-48
+214        </activity>
+215        <activity
+215-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:23:9-27:75
+216            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+216-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:24:13-93
+217            android:excludeFromRecents="true"
+217-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:25:13-46
+218            android:exported="false"
+218-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:26:13-37
+219            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+219-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:27:13-72
+220        <!--
+221            Service handling Google Sign-In user revocation. For apps that do not integrate with
+222            Google Sign-In, this service will never be started.
+223        -->
+224        <service
+224-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:33:9-37:51
+225            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+225-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:34:13-89
+226            android:exported="true"
+226-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:35:13-36
+227            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+227-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:36:13-107
+228            android:visibleToInstantApps="true" />
+228-->[com.google.android.gms:play-services-auth:20.7.0] C:\Users\overy\.gradle\caches\8.11\transforms\fb710f1885f832906d1a0290dcd5501b\transformed\jetified-play-services-auth-20.7.0\AndroidManifest.xml:37:13-48
+229
+230        <receiver
+230-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:29:9-33:20
+231            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+231-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:30:13-85
+232            android:enabled="true"
+232-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:31:13-35
+233            android:exported="false" >
+233-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:32:13-37
+234        </receiver>
+235
+236        <service
+236-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:35:9-38:40
+237            android:name="com.google.android.gms.measurement.AppMeasurementService"
+237-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:36:13-84
+238            android:enabled="true"
+238-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:37:13-35
+239            android:exported="false" />
+239-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:38:13-37
+240        <service
+240-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:39:9-43:72
+241            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+241-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:40:13-87
+242            android:enabled="true"
+242-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:41:13-35
+243            android:exported="false"
+243-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:42:13-37
+244            android:permission="android.permission.BIND_JOB_SERVICE" />
+244-->[com.google.android.gms:play-services-measurement:22.4.0] C:\Users\overy\.gradle\caches\8.11\transforms\a17e6399cd0b7a9d89908fc651108187\transformed\jetified-play-services-measurement-22.4.0\AndroidManifest.xml:43:13-69
+245
+246        <activity
+246-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\cdf664f5f2c639e57d5bfd8976c77172\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:20:9-22:45
+247            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+247-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\cdf664f5f2c639e57d5bfd8976c77172\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:20:19-85
+248            android:exported="false"
+248-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\cdf664f5f2c639e57d5bfd8976c77172\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:22:19-43
+249            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+249-->[com.google.android.gms:play-services-base:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\cdf664f5f2c639e57d5bfd8976c77172\transformed\jetified-play-services-base-18.6.0\AndroidManifest.xml:21:19-78
+250
+251        <provider
+251-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:23:9-28:39
+252            android:name="com.google.firebase.provider.FirebaseInitProvider"
+252-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:24:13-77
+253            android:authorities="com.lionsoft.System_Launcher2.firebaseinitprovider"
+253-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:25:13-72
+254            android:directBootAware="true"
+254-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:26:13-43
+255            android:exported="false"
+255-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:27:13-37
+256            android:initOrder="100" />
+256-->[com.google.firebase:firebase-common:21.0.0] C:\Users\overy\.gradle\caches\8.11\transforms\6cc236f1e9a150c1081ea04421403076\transformed\jetified-firebase-common-21.0.0\AndroidManifest.xml:28:13-36
+257
+258        <uses-library
+258-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\overy\.gradle\caches\8.11\transforms\3c91d787a5624bb1273c4d5df095c326\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:23:9-25:40
+259            android:name="android.ext.adservices"
+259-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\overy\.gradle\caches\8.11\transforms\3c91d787a5624bb1273c4d5df095c326\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:24:13-50
+260            android:required="false" />
+260-->[androidx.privacysandbox.ads:ads-adservices:1.1.0-beta11] C:\Users\overy\.gradle\caches\8.11\transforms\3c91d787a5624bb1273c4d5df095c326\transformed\jetified-ads-adservices-1.1.0-beta11\AndroidManifest.xml:25:13-37
+261
+262        <meta-data
+262-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\3e1f77df9aeef36580a010e70d83ec6f\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:21:9-23:69
+263            android:name="com.google.android.gms.version"
+263-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\3e1f77df9aeef36580a010e70d83ec6f\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:22:13-58
+264            android:value="@integer/google_play_services_version" />
+264-->[com.google.android.gms:play-services-basement:18.6.0] C:\Users\overy\.gradle\caches\8.11\transforms\3e1f77df9aeef36580a010e70d83ec6f\transformed\jetified-play-services-basement-18.6.0\AndroidManifest.xml:23:13-66
+265
+266        <provider
+266-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+267            android:name="androidx.startup.InitializationProvider"
+267-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+268            android:authorities="com.lionsoft.System_Launcher2.androidx-startup"
+268-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+269            android:exported="false" >
+269-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+270            <meta-data
+270-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+271                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+271-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+272                android:value="androidx.startup" />
+272-->[androidx.emoji2:emoji2:1.2.0] C:\Users\overy\.gradle\caches\8.11\transforms\506e0923b2edf699a568247bbabd40eb\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+273            <meta-data
+273-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+274                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+274-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+275                android:value="androidx.startup" />
+275-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\overy\.gradle\caches\8.11\transforms\2be88b33c7c135c3fb5a1d54448b4c97\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+276        </provider> <!-- The activities will be merged into the manifest of the hosting app. -->
+277        <activity
+277-->[com.google.android.play:core-common:2.0.3] C:\Users\overy\.gradle\caches\8.11\transforms\25c0734c520156e49f39757d5f2dc62c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:14:9-18:65
+278            android:name="com.google.android.play.core.common.PlayCoreDialogWrapperActivity"
+278-->[com.google.android.play:core-common:2.0.3] C:\Users\overy\.gradle\caches\8.11\transforms\25c0734c520156e49f39757d5f2dc62c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:15:13-93
+279            android:exported="false"
+279-->[com.google.android.play:core-common:2.0.3] C:\Users\overy\.gradle\caches\8.11\transforms\25c0734c520156e49f39757d5f2dc62c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:16:13-37
+280            android:stateNotNeeded="true"
+280-->[com.google.android.play:core-common:2.0.3] C:\Users\overy\.gradle\caches\8.11\transforms\25c0734c520156e49f39757d5f2dc62c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:17:13-42
+281            android:theme="@style/Theme.PlayCore.Transparent" />
+281-->[com.google.android.play:core-common:2.0.3] C:\Users\overy\.gradle\caches\8.11\transforms\25c0734c520156e49f39757d5f2dc62c\transformed\jetified-core-common-2.0.3\AndroidManifest.xml:18:13-62
+282    </application>
+283
+284</manifest>

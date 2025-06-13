@@ -6155,7 +6155,7 @@ IL_00de:
 		Type_t* L_42 = ___0_type;
 		NullCheck(L_42);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_43;
-		L_43 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(86, L_42, ((int32_t)52));
+		L_43 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(87, L_42, ((int32_t)52));
 		V_6 = L_43;
 		V_2 = 0;
 		goto IL_01aa;
@@ -6466,7 +6466,7 @@ IL_000e:
 		Type_t* L_4 = ___0_type;
 		NullCheck(L_4);
 		PropertyInfoU5BU5D_tD81C248B41D0C76207C42DB9C332DC79F490B1D7* L_5;
-		L_5 = VirtualFuncInvoker1< PropertyInfoU5BU5D_tD81C248B41D0C76207C42DB9C332DC79F490B1D7*, int32_t >::Invoke(109, L_4, ((int32_t)52));
+		L_5 = VirtualFuncInvoker1< PropertyInfoU5BU5D_tD81C248B41D0C76207C42DB9C332DC79F490B1D7*, int32_t >::Invoke(110, L_4, ((int32_t)52));
 		V_1 = L_5;
 		V_2 = 0;
 		goto IL_006b;
@@ -6543,7 +6543,7 @@ IL_006b:
 		Type_t* L_23 = ___0_type;
 		NullCheck(L_23);
 		FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8* L_24;
-		L_24 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(86, L_23, ((int32_t)52));
+		L_24 = VirtualFuncInvoker1< FieldInfoU5BU5D_t50D47CBECF1AEB152F555803E3329D9E34DBF8D8*, int32_t >::Invoke(87, L_23, ((int32_t)52));
 		V_5 = L_24;
 		V_2 = 0;
 		goto IL_0119;

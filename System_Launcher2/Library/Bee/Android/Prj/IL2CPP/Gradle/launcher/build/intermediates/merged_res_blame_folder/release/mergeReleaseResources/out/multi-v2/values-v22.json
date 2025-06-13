@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.lionsoft.System_Launcher2.launcher-mergeReleaseResources-19:/values-v22/values-v22.xml",
+            "outputFile": "com.lionsoft.System_Launcher2.launcher-mergeReleaseResources-29:/values-v22/values-v22.xml",
             "map": [
                 {
                     "source": "C:\\Users\\overy\\.gradle\\caches\\8.11\\transforms\\a776d172d9d24a1128478cf2dc19e9b4\\transformed\\appcompat-1.6.1\\res\\values-v22\\values-v22.xml",

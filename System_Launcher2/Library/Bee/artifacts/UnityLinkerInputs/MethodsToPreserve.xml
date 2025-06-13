@@ -8,7 +8,6 @@
 			<method name="OnClickCloseButton"/>
 			<method name="OnClickCloseButton"/>
 			<method name="OnClickCloseButton"/>
-			<method name="OnClickCloseButton"/>
 		</type>
 		<type fullname="ChapterClearUI">
 			<method name="OnClickHomeBtn"/>
@@ -53,14 +52,29 @@
 			<method name="OnClickStartBtn"/>
 			<method name="OnClickStartBtn"/>
 		</type>
+		<type fullname="LoginUI">
+			<method name="OnClickSignInWithApple"/>
+			<method name="OnClickSignInWithGoogle"/>
+		</type>
 		<type fullname="PauseUI">
 			<method name="OnClickHome"/>
 			<method name="OnClickResume"/>
 		</type>
 		<type fullname="SettingsUI">
-			<method name="OnClickPrivacyPolicyBtn"/>
-			<method name="OnClickSoundOffToggle"/>
-			<method name="OnClickSoundOnToggle"/>
+			<method name="OnClickLogoutBtn"/>
+		</type>
+	</assembly>
+	<assembly fullname="gpm_logviewer" ignoreIfMissing="1">
+		<type fullname="Gpm.LogViewer.Internal.ConsoleView">
+			<method name="ChangeFilterIgnoreCase"/>
+			<method name="SelectErrorType"/>
+			<method name="SelectLogType"/>
+			<method name="SelectWarningType"/>
+			<method name="ShowPlayTime"/>
+			<method name="ShowSceneName"/>
+		</type>
+		<type fullname="Gpm.LogViewer.Internal.Viewer">
+			<method name="OnAlphaValueChanged"/>
 		</type>
 	</assembly>
 </linker>

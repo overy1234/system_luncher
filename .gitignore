@@ -58,6 +58,8 @@ ExportedObj/
 *.VC.db
 *.dylib
 
+
+
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
@@ -65,6 +67,8 @@ ExportedObj/
 
 # Unity3D generated file on crash reports
 sysinfo.txt
+luncher.keystore
+
 
 # Builds
 *.apk
@@ -86,3 +90,70 @@ crashlytics-build.properties
 
 # Log files
 *.log
+# Unity build temp files
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# Unity cache and temp files
+/[Ll]ibrary/
+sysinfo.txt
+*.stackdump
+*.buildlog
+
+# Android build files
+.utmp/
+*.utmp
+
+# Gradle files (Android)
+.gradle/
+/gradlew
+/gradlew.bat
+/gradle/
+
+# NDK
+obj/
+*.so
+*.a
+
+# Visual Studio cache files
+*.tmp
+*.temp
+*.cache
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity specific
+*.unityproj
+*.sln
+*.csproj
+*.pidb
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

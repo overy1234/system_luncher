@@ -104,6 +104,13 @@
             "usedInScenes": []
         },
         {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "FirebaseManager",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
             "managedAssemblyName": "",
             "nativeClass": "GameManager",
             "fullManagedTypeName": "",
@@ -318,6 +325,13 @@
             "managedAssemblyName": "Assembly-CSharp.dll",
             "nativeClass": "",
             "fullManagedTypeName": "LobbyUIController",
+            "moduleName": "",
+            "usedInScenes": []
+        },
+        {
+            "managedAssemblyName": "Assembly-CSharp.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "LoginUI",
             "moduleName": "",
             "usedInScenes": []
         },
@@ -1082,6 +1096,13 @@
                 "Assets/Scenes/Lobby.unity",
                 "Assets/Scenes/Title.unity"
             ]
+        },
+        {
+            "managedAssemblyName": "Unity.2D.Animation.Runtime.dll",
+            "nativeClass": "",
+            "fullManagedTypeName": "UnityEngine.U2D.Animation.BufferManager",
+            "moduleName": "",
+            "usedInScenes": []
         },
         {
             "managedAssemblyName": "Unity.2D.Animation.Runtime.dll",

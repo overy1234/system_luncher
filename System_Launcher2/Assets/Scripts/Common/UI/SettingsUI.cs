@@ -112,4 +112,12 @@ public class SettingsUI : BaseUI
         // 개인정보처리방침 URL을 브라우저에서 열기
         Application.OpenURL(PRIVACY_POLICY_URL);
     }
+
+
+    public void OnClickLogoutBtn()
+    {
+        Logger.Log($"{GetType()}::OnClickLogoutBtn");
+
+        FirebaseManager.Instance.SignOut();
+    }
 }

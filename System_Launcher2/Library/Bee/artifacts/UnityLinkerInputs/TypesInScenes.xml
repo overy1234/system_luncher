@@ -11,6 +11,7 @@
 		<type fullname="DataTableManager" preserve="nothing"/>
 		<type fullname="EquipmentUI" preserve="nothing"/>
 		<type fullname="EquippedItemSlot" preserve="nothing"/>
+		<type fullname="FirebaseManager" preserve="nothing"/>
 		<type fullname="GoodsMove" preserve="nothing"/>
 		<type fullname="GoodsUI" preserve="nothing"/>
 		<type fullname="InGameManager" preserve="nothing"/>
@@ -19,6 +20,7 @@
 		<type fullname="InventoryUI" preserve="nothing"/>
 		<type fullname="LobbyManager" preserve="nothing"/>
 		<type fullname="LobbyUIController" preserve="nothing"/>
+		<type fullname="LoginUI" preserve="nothing"/>
 		<type fullname="PauseUI" preserve="nothing"/>
 		<type fullname="PlayerPlatformerController" preserve="nothing"/>
 		<type fullname="SceneLoader" preserve="nothing"/>
@@ -54,6 +56,7 @@
 		<type fullname="WrapLayoutGroup" preserve="nothing"/>
 	</assembly>
 	<assembly fullname="Unity.2D.Animation.Runtime">
+		<type fullname="UnityEngine.U2D.Animation.BufferManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManager" preserve="nothing"/>
 		<type fullname="UnityEngine.U2D.Animation.DeformationManagerUpdater" preserve="nothing"/>
 	</assembly>

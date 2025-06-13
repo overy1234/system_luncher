@@ -1427,6 +1427,11 @@ struct GCHandleType_t4CD45A3495E593D093AB0CE36EF9EC1A1572F82A
 {
 	int32_t ___value__;
 };
+struct HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F 
+{
+	RuntimeObject* ____wrapper;
+	intptr_t ____handle;
+};
 struct InternalArrayTypeE_tBA1DA4D3C933F4D60080F912A38EA538BCE60ECA 
 {
 	int32_t ___value__;
@@ -3385,6 +3390,8 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* String_Concat_m093934F71A9B351911EE
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool String_IsNullOrEmpty_mEA9E3FB005AC28FE02E69FCF95A7B8456192B478 (String_t* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Exception_t* Exception_get_InnerException_m0C1BDB339C786BA4DA7D2C1AD214571CFBBB1410_inline (Exception_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* Environment_get_NewLine_m8BF68A4EFDAFFB66500984CE779629811BA98FFF (const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandleRef__ctor_m0298D55E5F35F77B6A6CCA75C8E828C3F3127DE7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* __this, RuntimeObject* ___0_wrapper, intptr_t ___1_handle, const RuntimeMethod* method) ;
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17_inline (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIntPtr_op_Equality_m6854CBDA705729A896265CF7D2BD522E3460DCFB (uintptr_t ___0_value1, uintptr_t ___1_value2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR InvalidOperationException_t5DDE4D49B7405FAAB1E4576F4715A42A3FAD4BAB* SafeBuffer_NotInitialized_m9BE50D2B8C0DB671FB7D2D255107123B4ED4BE8F (const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void SafeHandle_DangerousAddRef_m9FA46208A92D8B33059B8E8712F49AE45BB5E922 (SafeHandle_tC1A4DA80DA89B867CC011B707A07275230321BF7* __this, bool* ___0_success, const RuntimeMethod* method) ;
@@ -20690,7 +20697,7 @@ IL_004f:
 IL_006b:
 	{
 		String_t* L_18;
-		L_18 = VirtualFuncInvoker0< String_t* >::Invoke(8, __this);
+		L_18 = VirtualFuncInvoker0< String_t* >::Invoke(9, __this);
 		if (!L_18)
 		{
 			goto IL_0085;
@@ -20701,7 +20708,7 @@ IL_006b:
 		String_t* L_20;
 		L_20 = Environment_get_NewLine_m8BF68A4EFDAFFB66500984CE779629811BA98FFF(NULL);
 		String_t* L_21;
-		L_21 = VirtualFuncInvoker0< String_t* >::Invoke(8, __this);
+		L_21 = VirtualFuncInvoker0< String_t* >::Invoke(9, __this);
 		String_t* L_22;
 		L_22 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_19, L_20, L_21, NULL);
 		V_1 = L_22;
@@ -20712,6 +20719,48 @@ IL_0085:
 		String_t* L_23 = V_1;
 		return L_23;
 	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void HandleRef__ctor_m0298D55E5F35F77B6A6CCA75C8E828C3F3127DE7 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* __this, RuntimeObject* ___0_wrapper, intptr_t ___1_handle, const RuntimeMethod* method) 
+{
+	{
+		RuntimeObject* L_0 = ___0_wrapper;
+		__this->____wrapper = L_0;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->____wrapper), (void*)L_0);
+		intptr_t L_1 = ___1_handle;
+		__this->____handle = L_1;
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void HandleRef__ctor_m0298D55E5F35F77B6A6CCA75C8E828C3F3127DE7_AdjustorThunk (RuntimeObject* __this, RuntimeObject* ___0_wrapper, intptr_t ___1_handle, const RuntimeMethod* method)
+{
+	HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F*>(__this + _offset);
+	HandleRef__ctor_m0298D55E5F35F77B6A6CCA75C8E828C3F3127DE7(_thisAdjusted, ___0_wrapper, ___1_handle, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR intptr_t HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17 (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* __this, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = __this->____handle;
+		return L_0;
+	}
+}
+IL2CPP_EXTERN_C  intptr_t HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F*>(__this + _offset);
+	intptr_t _returnValue;
+	_returnValue = HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17_inline(_thisAdjusted, method);
+	return _returnValue;
 }
 #ifdef __clang__
 #pragma clang diagnostic pop
@@ -21013,7 +21062,7 @@ IL_0053:
 IL_006f:
 	{
 		String_t* L_19;
-		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(8, __this);
+		L_19 = VirtualFuncInvoker0< String_t* >::Invoke(9, __this);
 		if (!L_19)
 		{
 			goto IL_0089;
@@ -21024,7 +21073,7 @@ IL_006f:
 		String_t* L_21;
 		L_21 = Environment_get_NewLine_m8BF68A4EFDAFFB66500984CE779629811BA98FFF(NULL);
 		String_t* L_22;
-		L_22 = VirtualFuncInvoker0< String_t* >::Invoke(8, __this);
+		L_22 = VirtualFuncInvoker0< String_t* >::Invoke(9, __this);
 		String_t* L_23;
 		L_23 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_20, L_21, L_22, NULL);
 		V_1 = L_23;
@@ -24150,6 +24199,13 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR Exception_t* Exception_get_InnerE
 {
 	{
 		Exception_t* L_0 = __this->____innerException;
+		return L_0;
+	}
+}
+IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR intptr_t HandleRef_get_Handle_m2055005E349E895499E1B3B826C89228FFAC4C17_inline (HandleRef_t4B05E32B68797F702257D4E838B85A976313F08F* __this, const RuntimeMethod* method) 
+{
+	{
+		intptr_t L_0 = __this->____handle;
 		return L_0;
 	}
 }

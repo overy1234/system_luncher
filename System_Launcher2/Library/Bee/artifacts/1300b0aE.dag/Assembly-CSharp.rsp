@@ -133,8 +133,18 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
+-define:DEV_VER
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Firebase/Plugins/Firebase.Analytics.dll"
+-r:"Assets/Firebase/Plugins/Firebase.App.dll"
+-r:"Assets/Firebase/Plugins/Firebase.Auth.dll"
+-r:"Assets/Firebase/Plugins/Firebase.Database.dll"
+-r:"Assets/Firebase/Plugins/Firebase.Firestore.dll"
+-r:"Assets/Firebase/Plugins/Firebase.Platform.dll"
+-r:"Assets/Firebase/Plugins/Firebase.RemoteConfig.dll"
+-r:"Assets/Firebase/Plugins/Firebase.TaskExtension.dll"
+-r:"Assets/Firebase/Plugins/Google.MiniJson.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/6000.1.5f1/Editor/Data/Managed/UnityEngine/UnityEditor.BuildProfileModule.dll"
@@ -441,12 +451,22 @@
 "Assets/Art/UIParticleSystem.cs"
 "Assets/GameAsset/Scripts/PhysicsObject.cs"
 "Assets/GameAsset/Scripts/PlayerPlatformerController.cs"
+"Assets/GoogleSignIn/Future.cs"
+"Assets/GoogleSignIn/GoogleSignIn.cs"
+"Assets/GoogleSignIn/GoogleSignInConfiguration.cs"
+"Assets/GoogleSignIn/GoogleSignInStatusCode.cs"
+"Assets/GoogleSignIn/GoogleSignInUser.cs"
+"Assets/GoogleSignIn/Impl/BaseObject.cs"
+"Assets/GoogleSignIn/Impl/GoogleSignInImpl.cs"
+"Assets/GoogleSignIn/Impl/NativeFuture.cs"
+"Assets/GoogleSignIn/Impl/SignInHelperObject.cs"
 "Assets/Scripts/Coin.cs"
 "Assets/Scripts/Common/AudioManager.cs"
 "Assets/Scripts/Common/CSVReader.cs"
 "Assets/Scripts/Common/Customtools.cs"
 "Assets/Scripts/Common/DataTable/AchievementData.cs"
 "Assets/Scripts/Common/DataTableManager.cs"
+"Assets/Scripts/Common/FirebaseManager.cs"
 "Assets/Scripts/Common/GlobalDefine.cs"
 "Assets/Scripts/Common/Logger.cs"
 "Assets/Scripts/Common/SceneLoader.cs"
@@ -464,6 +484,7 @@
 "Assets/Scripts/Common/UI/GoodsUI.cs"
 "Assets/Scripts/Common/UI/InventoryItemSlot.cs"
 "Assets/Scripts/Common/UI/InventoryUI.cs"
+"Assets/Scripts/Common/UI/LoginUI.cs"
 "Assets/Scripts/Common/UI/PauseUI.cs"
 "Assets/Scripts/Common/UI/SettingsUI.cs"
 "Assets/Scripts/Common/UI/StageClearUI.cs"
@@ -480,6 +501,7 @@
 "Assets/Scripts/Lobby/LobbyManager.cs"
 "Assets/Scripts/Lobby/LobbyUIController.cs"
 "Assets/Scripts/Title/TitleManager.cs"
+"Assets/SignInSample/SigninSampleScript.cs"
 -langversion:9.0
 /deterministic
 /optimize+

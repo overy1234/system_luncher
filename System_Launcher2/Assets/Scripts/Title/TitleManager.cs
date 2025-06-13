@@ -1,21 +1,19 @@
-using System.Collections;
-using System.Collections.Generic;
+ï»¿using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TitleManager : MonoBehaviour
 {
-    //·Î°í
+    //ï¿½Î°ï¿½
     public Animation LogoAnim;
     public TextMeshProUGUI LogoTxt;
 
-    //Å¸ÀÌÆ²
+    //Å¸ï¿½ï¿½Æ²
     public GameObject Title;
     public Slider LoadingSlider;
     public TextMeshProUGUI LoadingProgressTxt;
 
-    //https://docs.unity3d.com/ScriptReference/AsyncOperation.html
     private AsyncOperation m_AsyncOperation;
 
     private void Awake()
@@ -26,29 +24,18 @@ public class TitleManager : MonoBehaviour
 
     private void Start()
     {
-        //À¯Àú µ¥ÀÌÅÍ ·Îµå
+        //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Îµï¿½
         UserDataManager.Instance.LoadUserData();
 
-        //ÀúÀåµÈ À¯Àú µ¥ÀÌÅÍ°¡ ¾øÀ¸¸é ±âº»°ªÀ¸·Î ¼¼ÆÃ ÈÄ ÀúÀå
+        //ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Í°ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½âº»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
         if (!UserDataManager.Instance.ExistsSavedData)
         {
-            UserDataManager.Instance.SetDefaultUserData(); // ±âº» µ¥ÀÌÅÍ ¼³Á¤
-            UserDataManager.Instance.SaveUserData(); // ±âº» µ¥ÀÌÅÍ ÀúÀå
+            UserDataManager.Instance.SetDefaultUserData();
+            UserDataManager.Instance.SaveUserData();
         }
 
-        //var confirmUIData = new ConfirmUIData();
-        //confirmUIData.ConfirmType = ConfirmType.OK_CANCEL;
-        //confirmUIData.TitleTxt = "UI Test";
-        //confirmUIData.DescTxt = "This is UI Text.";
-        //confirmUIData.OKBtnTxt = "È®ÀÎ";
-        //confirmUIData.CancelBtnTxt = "Ãë¼Ò";
-        //UIManager.Instance.OpenUI<ConfirmUI>(confirmUIData);
-
         AudioManager.Instance.OnLoadUserData();
-
         UIManager.Instance.EnableGoodsUI(false);
-
-
 
         StartCoroutine(LoadGameCo());
     }
@@ -57,43 +44,103 @@ public class TitleManager : MonoBehaviour
     {
         Logger.Log($"{GetType()}::LoadGameCo");
 
-
-        
-
-
-
-
         LogoAnim.Play();
         yield return new WaitForSeconds(LogoAnim.clip.length);
 
         LogoAnim.gameObject.SetActive(false);
         Title.SetActive(true);
 
+        //Check third party service init
+        if (!CheckThirdPartyServiceInit())
+            yield break;
+
+        //Validate app version
+        if(!ValidateAppVersion())
+            yield break;
+
+        //Check sign in
+        if(!FirebaseManager.Instance.IsSignedIn())
+        {
+            var uiData = new BaseUIData();
+            UIManager.Instance.OpenUI<LoginUI>(uiData);
+        }
+
+        //Wait until user is signed in
+        while (!FirebaseManager.Instance.IsSignedIn())
+        {
+            yield return null;
+        }
+
+        yield return StartCoroutine(LoadLobbyCo());
+    }
+
+    private bool CheckThirdPartyServiceInit()
+    {
+        return FirebaseManager.Instance.IsInit();
+    }
+
+    private bool ValidateAppVersion()
+    {
+        bool result = false;
+
+        if(Application.version == FirebaseManager.Instance.GetAppVersion())
+        {
+            result = true;
+        }
+        else
+        {
+            var uiData = new ConfirmUIData();
+            uiData.ConfirmType = ConfirmType.OK_CANCEL;
+            uiData.TitleTxt = string.Empty;
+            uiData.DescTxt = "App version is outdated. Will you update your app?";
+            uiData.OKBtnTxt = "Update";
+            uiData.CancelBtnTxt = "Cancel";
+            uiData.OnClickOKBtn = () =>
+            {
+#if UNITY_ANDROID
+                Application.OpenURL(GlobalDefine.GOOGLE_PLAY_STORE);
+#elif UNITY_IOS
+                Application.OpenURL(GlobalDefine.APPLE_APP_STORE);
+#endif
+            };
+            uiData.OnClickCancelBtn = () =>
+            {
+                Application.Quit();
+            };
+            UIManager.Instance.OpenUI<ConfirmUI>(uiData);
+        }
+
+        return result;
+    }
+
+    private IEnumerator LoadLobbyCo()
+    {
         m_AsyncOperation = SceneLoader.Instance.LoadSceneAsync(SceneType.Lobby);
         if (m_AsyncOperation == null)
         {
-            Logger.Log("Lobby async loading error.");
+            Logger.LogError("Lobby async loading error.");
             yield break;
         }
 
         m_AsyncOperation.allowSceneActivation = false;
 
         /*
-        * ·Îµù ½Ã°£ÀÌ ÂªÀº °æ¿ì ·Îµù ½½¶óÀÌ´õ º¯È­°¡ ³Ê¹« »¡¶ó º¸ÀÌÁö ¾ÊÀ» ¼ö ÀÖ´Ù.
-        * ÀÏºÎ·¯ ¸î ÃÊ °£ 50%·Î º¸¿©ÁÜÀ¸·Î½á ½Ã°¢ÀûÀ¸·Î ´õ ÀÚ¿¬½º·´°Ô Ã³¸®ÇÑ´Ù.
-        */
+         * ï¿½Îµï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ Âªï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½È­ï¿½ï¿½ ï¿½Ê¹ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ö´ï¿½.
+         * ï¿½ÏºÎ·ï¿½ ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ 50%ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î½ï¿½ ï¿½Ã°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½Ú¿ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã³ï¿½ï¿½ï¿½Ñ´ï¿½.
+         */
         LoadingSlider.value = 0.5f;
-        LoadingProgressTxt.text = $"{(int)(LoadingSlider.value * 100)}%";
-        yield return new WaitForSeconds(1);
+        LoadingProgressTxt.text = ((int)(LoadingSlider.value * 100)).ToString();
+        yield return new WaitForSeconds(0.5f);
 
-        while (!m_AsyncOperation.isDone) //·ÎµùÀÌ ÁøÇà ÁßÀÏ ¶§ 
+        while (!m_AsyncOperation.isDone) //ï¿½Îµï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
         {
-            //·Îµù ½½¶óÀÌ´õ ¾÷µ¥ÀÌÆ®
+            //ï¿½Îµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ®
             LoadingSlider.value = m_AsyncOperation.progress < 0.5f ? 0.5f : m_AsyncOperation.progress;
-            LoadingProgressTxt.text = $"{(int)(LoadingSlider.value * 100)}%";
+            LoadingProgressTxt.text = ((int)(LoadingSlider.value * 100)).ToString();
 
-            //¾À ·ÎµùÀÌ ¿Ï·áµÇ¾ú´Ù¸é ·Îºñ·Î ÀüÈ¯ÇÏ°í ÄÚ·çÆ¾ Á¾·á
-            if (m_AsyncOperation.progress >= 0.9f)
+            //ï¿½ï¿½ ï¿½Îµï¿½ï¿½ï¿½ ï¿½Ï·ï¿½Ç¾ï¿½ï¿½Ù¸ï¿½ ï¿½Îºï¿½ï¿½ ï¿½ï¿½È¯ Ã³ï¿½ï¿½ï¿½Ï°ï¿½ ï¿½Ú·ï¿½Æ¾ ï¿½ï¿½ï¿½ï¿½
+            //https://docs.unity3d.com/ScriptReference/AsyncOperation-progress.html
+            if (m_AsyncOperation.progress == 0.9f)
             {
                 m_AsyncOperation.allowSceneActivation = true;
                 yield break;

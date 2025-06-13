@@ -1226,6 +1226,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_OpenURL_Injected();
 		Register_UnityEngine_Application_OpenURL_Injected();
 
+		//System.Void UnityEngine.Application::Quit(System.Int32)
+		void Register_UnityEngine_Application_Quit();
+		Register_UnityEngine_Application_Quit();
+
 		//System.Void UnityEngine.Application::SetLogCallbackDefined(System.Boolean)
 		void Register_UnityEngine_Application_SetLogCallbackDefined();
 		Register_UnityEngine_Application_SetLogCallbackDefined();
@@ -1242,6 +1246,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Application_get_productName_Injected();
 		Register_UnityEngine_Application_get_productName_Injected();
 
+		//System.Void UnityEngine.Application::get_streamingAssetsPath_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
+		void Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
+		Register_UnityEngine_Application_get_streamingAssetsPath_Injected();
+
 		//System.Void UnityEngine.Application::get_unityVersion_Injected(UnityEngine.Bindings.ManagedSpanWrapper&)
 		void Register_UnityEngine_Application_get_unityVersion_Injected();
 		Register_UnityEngine_Application_get_unityVersion_Injected();
@@ -1257,6 +1265,10 @@ void RegisterAllStrippedInternalCalls()
 		//UnityEngine.RuntimePlatform UnityEngine.Application::get_platform()
 		void Register_UnityEngine_Application_get_platform();
 		Register_UnityEngine_Application_get_platform();
+
+		//UnityEngine.StackTraceLogType UnityEngine.Application::GetStackTraceLogType(UnityEngine.LogType)
+		void Register_UnityEngine_Application_GetStackTraceLogType();
+		Register_UnityEngine_Application_GetStackTraceLogType();
 
 		//UnityEngine.SystemLanguage UnityEngine.Application::get_systemLanguage()
 		void Register_UnityEngine_Application_get_systemLanguage();
@@ -4945,6 +4957,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Double UnityEngine.Time::get_realtimeSinceStartupAsDouble()
 		void Register_UnityEngine_Time_get_realtimeSinceStartupAsDouble();
 		Register_UnityEngine_Time_get_realtimeSinceStartupAsDouble();
+
+		//System.Double UnityEngine.Time::get_timeAsDouble()
+		void Register_UnityEngine_Time_get_timeAsDouble();
+		Register_UnityEngine_Time_get_timeAsDouble();
 
 		//System.Int32 UnityEngine.Time::get_frameCount()
 		void Register_UnityEngine_Time_get_frameCount();

@@ -3495,6 +3495,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void UIntPtr__ctor_m5915109E3F198CA16FDFA9CF4
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void UIntPtr__ctor_m8FD36BD3C315E2608A9570159B5668D33CA9C896_inline (uintptr_t* __this, void* ___0_value, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool UIntPtr_Equals_m7A952F9624311E28A8F6B7D48A27E897F59E7021 (uintptr_t* __this, RuntimeObject* ___0_obj, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR int32_t UIntPtr_GetHashCode_mC4A4145D2235757DC7209CAE775528FCBE7A4547 (uintptr_t* __this, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t UIntPtr_ToUInt32_mAD7A6CD8C254052CAC60B29546BE796360E0B965 (uintptr_t* __this, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void* UIntPtr_ToPointer_mAC0FAC8DB45958BCCB0A795C234F05020D0B9B3D_inline (uintptr_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt64_ToString_mD3AAE57EA18A6779F5A17E4F91C900A231EB0A6F (uint64_t* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UInt32_ToString_mB6FA6D2459C82ADCF285C55363491D9669A80154 (uint32_t* __this, const RuntimeMethod* method) ;
@@ -4386,6 +4387,22 @@ IL2CPP_EXTERN_C  int32_t UIntPtr_GetHashCode_mC4A4145D2235757DC7209CAE775528FCBE
 	_thisAdjusted = reinterpret_cast<uintptr_t*>(__this + _offset);
 	int32_t _returnValue;
 	_returnValue = UIntPtr_GetHashCode_mC4A4145D2235757DC7209CAE775528FCBE7A4547(_thisAdjusted, method);
+	return _returnValue;
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR uint32_t UIntPtr_ToUInt32_mAD7A6CD8C254052CAC60B29546BE796360E0B965 (uintptr_t* __this, const RuntimeMethod* method) 
+{
+	{
+		uintptr_t L_0 = *__this;
+		return ((int32_t)(uint32_t)L_0);
+	}
+}
+IL2CPP_EXTERN_C  uint32_t UIntPtr_ToUInt32_mAD7A6CD8C254052CAC60B29546BE796360E0B965_AdjustorThunk (RuntimeObject* __this, const RuntimeMethod* method)
+{
+	uintptr_t* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<uintptr_t*>(__this + _offset);
+	uint32_t _returnValue;
+	_returnValue = UIntPtr_ToUInt32_mAD7A6CD8C254052CAC60B29546BE796360E0B965(_thisAdjusted, method);
 	return _returnValue;
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void* UIntPtr_ToPointer_mAC0FAC8DB45958BCCB0A795C234F05020D0B9B3D (uintptr_t* __this, const RuntimeMethod* method) 

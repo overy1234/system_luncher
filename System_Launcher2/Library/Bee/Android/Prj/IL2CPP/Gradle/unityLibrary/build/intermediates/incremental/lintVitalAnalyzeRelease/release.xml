@@ -1,13 +1,13 @@
 <variant
     name="release"
     package="com.unity3d.player"
-    minSdkVersion="23"
+    minSdkVersion="24"
     targetSdkVersion="36"
     mergedManifest="build\intermediates\merged_manifest\release\processReleaseManifest\AndroidManifest.xml"
     proguardFiles="build\intermediates\default_proguard_files\global\proguard-android.txt-8.7.2"
     consumerProguardFiles="proguard-unity.txt"
     partialResultsDir="build\intermediates\lint_vital_partial_results\release\lintVitalAnalyzeRelease\out"
-    desugaredMethodsFiles="C:\Users\overy\.gradle\caches\8.11\transforms\c65cacf2deeed601588801b53879e513\transformed\D8BackportedDesugaredMethods.txt">
+    desugaredMethodsFiles="C:\Users\overy\.gradle\caches\8.11\transforms\5c0f7a94bbbbf7e3a065abf2a3543fa6\transformed\D8BackportedDesugaredMethods.txt">
   <buildFeatures
       namespacing="REQUIRED"/>
   <sourceProviders>
@@ -27,6 +27,6 @@
       applicationId="com.unity3d.player"
       generatedSourceFolders="build\generated\ap_generated_sources\release\out"
       generatedResourceFolders="build\generated\res\resValues\release"
-      desugaredMethodsFiles="C:\Users\overy\.gradle\caches\8.11\transforms\c65cacf2deeed601588801b53879e513\transformed\D8BackportedDesugaredMethods.txt">
+      desugaredMethodsFiles="C:\Users\overy\.gradle\caches\8.11\transforms\5c0f7a94bbbbf7e3a065abf2a3543fa6\transformed\D8BackportedDesugaredMethods.txt">
   </artifact>
 </variant>

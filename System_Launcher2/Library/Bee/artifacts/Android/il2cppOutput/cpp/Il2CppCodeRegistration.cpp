@@ -16,6 +16,11 @@ IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedInstanceMethodPointers[];
 IL2CPP_EXTERN_C const Il2CppMethodPointer g_UnresolvedStaticMethodPointers[];
 IL2CPP_EXTERN_C Il2CppInteropData g_Il2CppInteropData[];
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_App_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Auth_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_Platform_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_RemoteConfig_CodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Firebase_TaskExtension_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Mono_Security_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_SuperMaxim_PubSub_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_SuperMaxim_PubSub_Demo_CodeGenModule;
@@ -74,9 +79,14 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_gpm_ui_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_gpm_ui_sample_CodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_mscorlib_CodeGenModule;
 IL2CPP_EXTERN_C const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[58] = 
+const Il2CppCodeGenModule* g_CodeGenModules[63] = 
 {
 	(&g_AssemblyU2DCSharp_CodeGenModule),
+	(&g_Firebase_App_CodeGenModule),
+	(&g_Firebase_Auth_CodeGenModule),
+	(&g_Firebase_Platform_CodeGenModule),
+	(&g_Firebase_RemoteConfig_CodeGenModule),
+	(&g_Firebase_TaskExtension_CodeGenModule),
 	(&g_Mono_Security_CodeGenModule),
 	(&g_SuperMaxim_PubSub_CodeGenModule),
 	(&g_SuperMaxim_PubSub_Demo_CodeGenModule),
@@ -138,22 +148,22 @@ const Il2CppCodeGenModule* g_CodeGenModules[58] =
 IL2CPP_EXTERN_C const Il2CppCodeRegistration g_CodeRegistration;
 const Il2CppCodeRegistration g_CodeRegistration = 
 {
-	27,
+	89,
 	g_ReversePInvokeWrapperPointers,
-	93468,
+	94202,
 	g_Il2CppGenericMethodPointers,
 	g_Il2CppGenericAdjustorThunks,
-	18828,
+	18966,
 	g_Il2CppInvokerPointers,
-	3018,
+	3030,
 	g_UnresolvedVirtualMethodPointers,
 	g_UnresolvedInstanceMethodPointers,
 	g_UnresolvedStaticMethodPointers,
-	742,
+	780,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	58,
+	63,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

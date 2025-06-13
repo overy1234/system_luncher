@@ -413,6 +413,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* DateTime_System_IConvertible_ToUInt64_mACC5
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime_System_Runtime_Serialization_ISerializable_GetObjectData_mC90A1D56C5CD5E23BE66C9D90EC3A867C71F490C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime_TimeToTicks_mFE9BA5F0AE03AB8E462BD15D006049ACF842B1F9_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime_ToLocalTime_mC7A8D4FD1DBFDD1E596D1BEE0257AA777FCB0595_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime__ctor_m3BCC46F053A8B6C0BF4E67B5E6AEF8E11D18E958_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime__ctor_m64AFCE84ABB24698256EB9F635EFD0A221823441_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* DateTime__ctor_m8CFD20DDCCB14AB28392A047FC4EE3F11929B8F2_RuntimeMethod_var;
@@ -1856,6 +1857,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_mD89390EF215242275A4E8F78
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SR_Format_m27BC634145CE1B8E25594A82CDBBF04AD501CA02 (String_t* ___0_resourceFormat, RuntimeObject* ___1_p1, RuntimeObject* ___2_p2, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465 (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_mA66CE5141E86C5BC75F79543F99A7BD77B420201 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, int32_t ___0_year, int32_t ___1_month, int32_t ___2_day, int32_t ___3_hour, int32_t ___4_minute, int32_t ___5_second, int32_t ___6_millisecond, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, int32_t ___0_year, int32_t ___1_month, int32_t ___2_day, int32_t ___3_hour, int32_t ___4_minute, int32_t ___5_second, int32_t ___6_millisecond, int32_t ___7_kind, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentNullException__ctor_m444AE141157E333844FC1A9500224C2F9FD24F4B (ArgumentNullException_t327031E412FAB2351B0022DD5DAD47E67E597129* __this, String_t* ___0_paramName, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR SerializationInfoEnumerator_t810DE600E5F6AA4F2B66A7F56074277CCD8F1540* SerializationInfo_GetEnumerator_m5230A1D4E4B612E90B10E2034C638CD42F667EA6 (SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* __this, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* SerializationInfoEnumerator_get_Name_m58B6D682B6C829258730C1E952E9099ACDDAE734 (SerializationInfoEnumerator_t810DE600E5F6AA4F2B66A7F56074277CCD8F1540* __this, const RuntimeMethod* method) ;
@@ -1998,6 +2000,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTimeFormat_TryFormat_mFBA0ED63E8D61B
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool DateTimeOffset_TryFormat_mBC9268BD19855CF3E7CF947720996B57CCD98F06 (DateTimeOffset_t4EE701FE2F386D6F932FAC9B11E4B74A5B30F0A4* __this, Span_1_tEDDF15FCF9EC6DEBA0F696BAACDDBAB9D92C252D ___0_destination, int32_t* ___1_charsWritten, ReadOnlySpan_1_t59614EA6E51A945A32B02AB17FBCBDF9A5C419C1 ___2_format, RuntimeObject* ___3_formatProvider, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m84E573C2093803DC9E6219461275B351D225C16A (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline (Exception_t* __this, int32_t ___0_value, const RuntimeMethod* method) ;
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m880D58CC9B6CD2F0E867298BA748343216D89A8B (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, String_t* ___0_message, Exception_t* ___1_innerException, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArithmeticException__ctor_m9F97AB2FDC9EED4A59627F1F2F6165AB592F8942 (ArithmeticException_t07E77822D0007642BC8959A671E70D1F33C84FEA* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeLoadException__ctor_m8C6FC5CF78B256F19356A241115BF03E64B7C00A (TypeLoadException_t6333E3083F7BFF1A582969E6F67ACBA8B0035C32* __this, String_t* ___0_message, const RuntimeMethod* method) ;
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void TypeLoadException__ctor_m89C9BE840B2C552C3F378FE56804FE42BA69B583 (TypeLoadException_t6333E3083F7BFF1A582969E6F67ACBA8B0035C32* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) ;
@@ -3026,6 +3029,119 @@ IL2CPP_EXTERN_C  void DateTime__ctor_mA66CE5141E86C5BC75F79543F99A7BD77B420201_A
 	int32_t _offset = 1;
 	_thisAdjusted = reinterpret_cast<DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D*>(__this + _offset);
 	DateTime__ctor_mA66CE5141E86C5BC75F79543F99A7BD77B420201(_thisAdjusted, ___0_year, ___1_month, ___2_day, ___3_hour, ___4_minute, ___5_second, ___6_millisecond, method);
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, int32_t ___0_year, int32_t ___1_month, int32_t ___2_day, int32_t ___3_hour, int32_t ___4_minute, int32_t ___5_second, int32_t ___6_millisecond, int32_t ___7_kind, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	int64_t V_0 = 0;
+	{
+		int32_t L_0 = ___6_millisecond;
+		if ((((int32_t)L_0) < ((int32_t)0)))
+		{
+			goto IL_000e;
+		}
+	}
+	{
+		int32_t L_1 = ___6_millisecond;
+		if ((((int32_t)L_1) < ((int32_t)((int32_t)1000))))
+		{
+			goto IL_0033;
+		}
+	}
+
+IL_000e:
+	{
+		int32_t L_2 = 0;
+		RuntimeObject* L_3 = Box(il2cpp_defaults.int32_class, &L_2);
+		int32_t L_4 = ((int32_t)999);
+		RuntimeObject* L_5 = Box(il2cpp_defaults.int32_class, &L_4);
+		String_t* L_6;
+		L_6 = SR_Format_m27BC634145CE1B8E25594A82CDBBF04AD501CA02(((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralCB6B67D4653121AE0F63EE256975A0DBD0FAF6B1)), L_3, L_5, NULL);
+		ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F* L_7 = (ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentOutOfRangeException_tEA2822DAF62B10EEED00E0E3A341D4BAF78CF85F_il2cpp_TypeInfo_var)));
+		ArgumentOutOfRangeException__ctor_mE5B2755F0BEA043CACF915D5CE140859EE58FA66(L_7, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral3DF008E4B70EBA2CEFB30E3226F82557BD7FD14D)), L_6, NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_7, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168_RuntimeMethod_var)));
+	}
+
+IL_0033:
+	{
+		int32_t L_8 = ___7_kind;
+		if ((((int32_t)L_8) < ((int32_t)0)))
+		{
+			goto IL_003d;
+		}
+	}
+	{
+		int32_t L_9 = ___7_kind;
+		if ((((int32_t)L_9) <= ((int32_t)2)))
+		{
+			goto IL_004d;
+		}
+	}
+
+IL_003d:
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_10 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m8F9D40CE19D19B698A70F9A258640EB52DB39B62(L_10, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteralF5613A6A4EDEA9E0E59881C956F596200F1345F8)), ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral414EEEFF5F961B9740DE01D5EC1AC2F0F745095E)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_10, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168_RuntimeMethod_var)));
+	}
+
+IL_004d:
+	{
+		int32_t L_11 = ___0_year;
+		int32_t L_12 = ___1_month;
+		int32_t L_13 = ___2_day;
+		il2cpp_codegen_runtime_class_init_inline(DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D_il2cpp_TypeInfo_var);
+		int64_t L_14;
+		L_14 = DateTime_DateToTicks_m2ADC6FF6BB38418819671A51620FBD0CAE0A208C(L_11, L_12, L_13, NULL);
+		int32_t L_15 = ___3_hour;
+		int32_t L_16 = ___4_minute;
+		int32_t L_17 = ___5_second;
+		int64_t L_18;
+		L_18 = DateTime_TimeToTicks_mFE9BA5F0AE03AB8E462BD15D006049ACF842B1F9(L_15, L_16, L_17, NULL);
+		V_0 = ((int64_t)il2cpp_codegen_add(L_14, L_18));
+		int64_t L_19 = V_0;
+		int32_t L_20 = ___6_millisecond;
+		V_0 = ((int64_t)il2cpp_codegen_add(L_19, ((int64_t)il2cpp_codegen_multiply(((int64_t)L_20), ((int64_t)((int32_t)10000))))));
+		int64_t L_21 = V_0;
+		if ((((int64_t)L_21) < ((int64_t)((int64_t)0))))
+		{
+			goto IL_0080;
+		}
+	}
+	{
+		int64_t L_22 = V_0;
+		if ((((int64_t)L_22) <= ((int64_t)((int64_t)3155378975999999999LL))))
+		{
+			goto IL_008b;
+		}
+	}
+
+IL_0080:
+	{
+		ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263* L_23 = (ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263*)il2cpp_codegen_object_new(((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&ArgumentException_tAD90411542A20A9C72D5CDA3A84181D8B947A263_il2cpp_TypeInfo_var)));
+		ArgumentException__ctor_m026938A67AF9D36BB7ED27F80425D7194B514465(L_23, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral758669C6E73419F7C9937E6A901F4CFC2057BEED)), NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_23, ((RuntimeMethod*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168_RuntimeMethod_var)));
+	}
+
+IL_008b:
+	{
+		int64_t L_24 = V_0;
+		int32_t L_25 = ___7_kind;
+		__this->____dateData = ((int64_t)(L_24|((int64_t)(((int64_t)L_25)<<((int32_t)62)))));
+		return;
+	}
+}
+IL2CPP_EXTERN_C  void DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168_AdjustorThunk (RuntimeObject* __this, int32_t ___0_year, int32_t ___1_month, int32_t ___2_day, int32_t ___3_hour, int32_t ___4_minute, int32_t ___5_second, int32_t ___6_millisecond, int32_t ___7_kind, const RuntimeMethod* method)
+{
+	DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* _thisAdjusted;
+	int32_t _offset = 1;
+	_thisAdjusted = reinterpret_cast<DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D*>(__this + _offset);
+	DateTime__ctor_m30157484F8C1D6527DC8B93AC6C9268EDB0B1168(_thisAdjusted, ___0_year, ___1_month, ___2_day, ___3_hour, ___4_minute, ___5_second, ___6_millisecond, ___7_kind, method);
 }
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DateTime__ctor_m3BCC46F053A8B6C0BF4E67B5E6AEF8E11D18E958 (DateTime_t66193957C73913903DDAD89FEDC46139BCA5802D* __this, SerializationInfo_t3C47F63E24BEB9FCE2DC6309E027F238DC5C5E37* ___0_info, StreamingContext_t56760522A751890146EE45F82F866B55B7E33677 ___1_context, const RuntimeMethod* method) 
 {
@@ -8230,6 +8346,16 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DivideByZeroException__ctor_m5E24CFDDA1E
 	}
 	{
 		ArithmeticException__ctor_m84E573C2093803DC9E6219461275B351D225C16A(__this, _stringLiteralFA85549C37D5E928683E7C8CC82CC429B13F9973, NULL);
+		Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline(__this, ((int32_t)-2147352558), NULL);
+		return;
+	}
+}
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void DivideByZeroException__ctor_mE15900048AEEE9B66A4DD9F2ACAC4448D85D4F23 (DivideByZeroException_tC43171E50A38F5CD4242D258D0B0C6B74898C279* __this, String_t* ___0_message, Exception_t* ___1_innerException, const RuntimeMethod* method) 
+{
+	{
+		String_t* L_0 = ___0_message;
+		Exception_t* L_1 = ___1_innerException;
+		ArithmeticException__ctor_m880D58CC9B6CD2F0E867298BA748343216D89A8B(__this, L_0, L_1, NULL);
 		Exception_set_HResult_m010A171183E240EBF4F7611E924B533FAB2E471F_inline(__this, ((int32_t)-2147352558), NULL);
 		return;
 	}
