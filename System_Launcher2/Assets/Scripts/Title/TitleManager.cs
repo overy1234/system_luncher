@@ -24,17 +24,6 @@ public class TitleManager : MonoBehaviour
 
     private void Start()
     {
-        //���� ������ �ε�
-        UserDataManager.Instance.LoadUserData();
-
-        //����� ���� �����Ͱ� ������ �⺻������ ���� �� ����
-        if (!UserDataManager.Instance.ExistsSavedData)
-        {
-            UserDataManager.Instance.SetDefaultUserData();
-            UserDataManager.Instance.SaveUserData();
-        }
-
-        AudioManager.Instance.OnLoadUserData();
         UIManager.Instance.EnableGoodsUI(false);
 
         StartCoroutine(LoadGameCo());
@@ -55,11 +44,11 @@ public class TitleManager : MonoBehaviour
             yield break;
 
         //Validate app version
-        if(!ValidateAppVersion())
+        if (!ValidateAppVersion())
             yield break;
 
         //Check sign in
-        if(!FirebaseManager.Instance.IsSignedIn())
+        if (!FirebaseManager.Instance.IsSignedIn())
         {
             var uiData = new BaseUIData();
             UIManager.Instance.OpenUI<LoginUI>(uiData);
@@ -67,6 +56,15 @@ public class TitleManager : MonoBehaviour
 
         //Wait until user is signed in
         while (!FirebaseManager.Instance.IsSignedIn())
+        {
+            yield return null;
+        }
+
+        //Load user data
+        UserDataManager.Instance.LoadUserData();
+
+        //Wait until all user data is loaded
+        while (!UserDataManager.Instance.IsUserDataLoaded())
         {
             yield return null;
         }
@@ -83,7 +81,7 @@ public class TitleManager : MonoBehaviour
     {
         bool result = false;
 
-        if(Application.version == FirebaseManager.Instance.GetAppVersion())
+        if (Application.version == FirebaseManager.Instance.GetAppVersion())
         {
             result = true;
         }
@@ -129,14 +127,14 @@ public class TitleManager : MonoBehaviour
          * �Ϻη� �� �� �� 50%�� ���������ν� �ð������� �� �ڿ������� ó���Ѵ�.
          */
         LoadingSlider.value = 0.5f;
-        LoadingProgressTxt.text = ((int)(LoadingSlider.value * 100)).ToString();
+        LoadingProgressTxt.text = $"{(int)(LoadingSlider.value * 100)}%";
         yield return new WaitForSeconds(0.5f);
 
         while (!m_AsyncOperation.isDone) //�ε��� ���� ���� ��
         {
             //�ε� �����̴� ������Ʈ
             LoadingSlider.value = m_AsyncOperation.progress < 0.5f ? 0.5f : m_AsyncOperation.progress;
-            LoadingProgressTxt.text = ((int)(LoadingSlider.value * 100)).ToString();
+            LoadingProgressTxt.text = $"{(int)(LoadingSlider.value * 100)}%";
 
             //�� �ε��� �Ϸ�Ǿ��ٸ� �κ�� ��ȯ ó���ϰ� �ڷ�ƾ ����
             //https://docs.unity3d.com/ScriptReference/AsyncOperation-progress.html

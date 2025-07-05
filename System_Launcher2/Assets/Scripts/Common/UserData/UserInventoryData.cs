@@ -37,6 +37,7 @@ public class UserItemStats
 
 public class UserInventoryData : IUserData
 {
+    public bool IsLoaded { get; set; }
     public UserItemData EquippedWeaponData { get; set; }
     public UserItemData EquippedShieldData { get; set; }
     public UserItemData EquippedChestArmorData { get; set; }
@@ -72,150 +73,22 @@ public class UserInventoryData : IUserData
         SetEquippedItemDic();
     }
 
-    public bool LoadData()
+    public void LoadData()
     {
         Logger.Log($"{GetType()}::LoadData");
 
-        bool result = false;
-
-        try
+        FirebaseManager.Instance.LoadUserData<UserInventoryData>(() =>
         {
-            string weaponJson = PlayerPrefs.GetString("EquippedWeaponData");
-            if (!string.IsNullOrEmpty(weaponJson))
-            {
-                EquippedWeaponData = JsonUtility.FromJson<UserItemData>(weaponJson);
-                Logger.Log($"EquippedWeaponData: SN:{EquippedWeaponData.SerialNumber} ItemId:{EquippedWeaponData.ItemId}");
-            }
-
-            string shieldJson = PlayerPrefs.GetString("EquippedShieldData");
-            if (!string.IsNullOrEmpty(shieldJson))
-            {
-                EquippedShieldData = JsonUtility.FromJson<UserItemData>(shieldJson);
-                Logger.Log($"EquippedShieldData: SN:{EquippedShieldData.SerialNumber} ItemId:{EquippedShieldData.ItemId}");
-            }
-
-            string chestArmorJson = PlayerPrefs.GetString("EquippedChestArmorData");
-            if (!string.IsNullOrEmpty(chestArmorJson))
-            {
-                EquippedChestArmorData = JsonUtility.FromJson<UserItemData>(chestArmorJson);
-                Logger.Log($"EquippedChestArmorData: SN:{EquippedChestArmorData.SerialNumber} ItemId:{EquippedChestArmorData.ItemId}");
-            }
-
-            string bootsJson = PlayerPrefs.GetString("EquippedBootsData");
-            if (!string.IsNullOrEmpty(bootsJson))
-            {
-                EquippedBootsData = JsonUtility.FromJson<UserItemData>(bootsJson);
-                Logger.Log($"EquippedBootsArmorData: SN:{EquippedBootsData.SerialNumber} ItemId:{EquippedBootsData.ItemId}");
-            }
-
-            string glovesJson = PlayerPrefs.GetString("EquippedGlovesData");
-            if (!string.IsNullOrEmpty(glovesJson))
-            {
-                EquippedGlovesData = JsonUtility.FromJson<UserItemData>(glovesJson);
-                Logger.Log($"EquippedGlovesData: SN:{EquippedGlovesData.SerialNumber} ItemId:{EquippedGlovesData.ItemId}");
-            }
-
-            string accessoryJson = PlayerPrefs.GetString("EquippedAccessoryData");
-            if (!string.IsNullOrEmpty(accessoryJson))
-            {
-                EquippedAccessoryData = JsonUtility.FromJson<UserItemData>(accessoryJson);
-                Logger.Log($"EquippedChestArmorData: SN:{EquippedAccessoryData.SerialNumber} ItemId:{EquippedAccessoryData.ItemId}");
-            }
-
-            string inventoryItemDataListJson = PlayerPrefs.GetString("InventoryItemDataList");
-            if (!string.IsNullOrEmpty(inventoryItemDataListJson))
-            {
-                UserInventoryItemDataListWrapper itemDataListWrapper = JsonUtility.FromJson<UserInventoryItemDataListWrapper>(inventoryItemDataListJson);
-                InventoryItemDataList = itemDataListWrapper.InventoryItemDataList;
-
-                Logger.Log("InventoryItemDataList");
-                foreach (var item in InventoryItemDataList)
-                {
-                    Logger.Log($"SerialNumber:{item.SerialNumber} ItemId:{item.ItemId}");
-                }
-            }
-
+            IsLoaded = true;
             SetEquippedItemDic();
-
-            result = true;
-        }
-        catch (System.Exception e)
-        {
-            Logger.Log("Load failed (" + e.Message + ")");
-        }
-
-        return result;
+        });
     }
 
-    public bool SaveData()
+    public void SaveData()
     {
         Logger.Log($"{GetType()}::SaveData");
 
-        bool result = false;
-
-        try
-        {
-            string weaponJson = JsonUtility.ToJson(EquippedWeaponData);
-            PlayerPrefs.SetString("EquippedWeaponData", weaponJson);
-            if (EquippedWeaponData != null)
-            {
-                Logger.Log($"EquippedWeaponData: SN:{EquippedWeaponData.SerialNumber} ItemId:{EquippedWeaponData.ItemId}");
-            }
-
-            string shieldJson = JsonUtility.ToJson(EquippedShieldData);
-            PlayerPrefs.SetString("EquippedShieldData", shieldJson);
-            if (EquippedShieldData != null)
-            {
-                Logger.Log($"EquippedShieldData: SN:{EquippedShieldData.SerialNumber} ItemId:{EquippedShieldData.ItemId}");
-            }
-
-            string chestArmorJson = JsonUtility.ToJson(EquippedChestArmorData);
-            PlayerPrefs.SetString("EquippedChestArmorData", chestArmorJson);
-            if (EquippedChestArmorData != null)
-            {
-                Logger.Log($"EquippedChestArmorData: SN:{EquippedChestArmorData.SerialNumber} ItemId:{EquippedChestArmorData.ItemId}");
-            }
-
-            string bootsJson = JsonUtility.ToJson(EquippedBootsData);
-            PlayerPrefs.SetString("EquippedBootsData", bootsJson);
-            if (EquippedBootsData != null)
-            {
-                Logger.Log($"EquippedBootsData: SN:{EquippedBootsData.SerialNumber} ItemId:{EquippedBootsData.ItemId}");
-            }
-
-            string glovesJson = JsonUtility.ToJson(EquippedGlovesData);
-            PlayerPrefs.SetString("EquippedGlovesData", glovesJson);
-            if (EquippedGlovesData != null)
-            {
-                Logger.Log($"EquippedGlovesData: SN:{EquippedGlovesData.SerialNumber} ItemId:{EquippedGlovesData.ItemId}");
-            }
-
-            string accessoryJson = JsonUtility.ToJson(EquippedAccessoryData);
-            PlayerPrefs.SetString("EquippedAccessoryData", accessoryJson);
-            if (EquippedAccessoryData != null)
-            {
-                Logger.Log($"EquippedAccessoryData: SN:{EquippedAccessoryData.SerialNumber} ItemId:{EquippedAccessoryData.ItemId}");
-            }
-
-            UserInventoryItemDataListWrapper inventoryItemDataListWrapper = new UserInventoryItemDataListWrapper();
-            inventoryItemDataListWrapper.InventoryItemDataList = InventoryItemDataList;
-            string inventoryItemDataListJson = JsonUtility.ToJson(inventoryItemDataListWrapper);
-            PlayerPrefs.SetString("InventoryItemDataList", inventoryItemDataListJson);
-
-            Logger.Log("InventoryItemDataList");
-            foreach (var item in InventoryItemDataList)
-            {
-                Logger.Log($"SerialNumber:{item.SerialNumber} ItemId:{item.ItemId}");
-            }
-
-            result = true;
-        }
-        catch (System.Exception e)
-        {
-            Logger.Log("Load failed (" + e.Message + ")");
-        }
-
-        return result;
+        FirebaseManager.Instance.SaveUserData<UserInventoryData>(ConvertDataToFirestoreDict());
     }
 
     public void SetEquippedItemDic()
@@ -389,5 +262,139 @@ public class UserInventoryData : IUserData
         }
 
         return new UserItemStats(totalAttackPower, totalDefense);
+    }
+
+    private Dictionary<string, object> ConvertDataToFirestoreDict()
+    {
+        Dictionary<string, object> dict = new Dictionary<string, object>
+        {
+            { "EquippedWeaponData", ConvertUserItemDataToDict(EquippedWeaponData) },
+            { "EquippedShieldData", ConvertUserItemDataToDict(EquippedShieldData) },
+            { "EquippedChestArmorData", ConvertUserItemDataToDict(EquippedChestArmorData) },
+            { "EquippedBootsData", ConvertUserItemDataToDict(EquippedBootsData) },
+            { "EquippedGlovesData", ConvertUserItemDataToDict(EquippedGlovesData) },
+            { "EquippedAccessoryData", ConvertUserItemDataToDict(EquippedAccessoryData) },
+            { "InventoryItemDataList", ConvertInventoryListToDict(InventoryItemDataList) }
+        };
+
+        return dict;
+    }
+
+    private Dictionary<string, object> ConvertUserItemDataToDict(UserItemData userItemData)
+    {
+        if (userItemData == null)
+        {
+            return null;
+        }
+
+        return new Dictionary<string, object>
+        {
+            { "SerialNumber", userItemData.SerialNumber },
+            { "ItemId", userItemData.ItemId }
+        };
+    }
+
+    private List<Dictionary<string, object>> ConvertInventoryListToDict(List<UserItemData> inventoryItemDataList)
+    {
+        List<Dictionary<string, object>> convertedInventoryList = new List<Dictionary<string, object>>();
+        foreach (var item in inventoryItemDataList)
+        {
+            convertedInventoryList.Add(ConvertUserItemDataToDict(item));
+        }
+
+        return convertedInventoryList;
+    }
+
+    public void SetData(Dictionary<string, object> firestoreDict)
+    {
+        ConvertFirestoreDictToData(firestoreDict);
+    }
+
+    private void ConvertFirestoreDictToData(Dictionary<string, object> dict)
+    {
+        EquippedWeaponData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedWeaponData"]);
+        EquippedShieldData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedShieldData"]);
+        EquippedChestArmorData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedChestArmorData"]);
+        EquippedBootsData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedBootsData"]);
+        EquippedGlovesData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedGlovesData"]);
+        EquippedAccessoryData = ConvertDictToUserItemData((Dictionary<string, object>)dict["EquippedAccessoryData"]);
+        InventoryItemDataList = ConvertDictToInventoryList((List<object>)dict["InventoryItemDataList"]);
+
+        if (dict.TryGetValue("EquippedWeaponData", out var equippedWeaponDataValue) && equippedWeaponDataValue is Dictionary<string, object> equippedWeaponDataDict)
+        {
+            EquippedWeaponData = ConvertDictToUserItemData(equippedWeaponDataDict);
+        }
+
+        if (dict.TryGetValue("EquippedShieldData", out var equippedShieldDataValue) && equippedShieldDataValue is Dictionary<string, object> equippedShieldDataDict)
+        {
+            EquippedShieldData = ConvertDictToUserItemData(equippedShieldDataDict);
+        }
+
+        if (dict.TryGetValue("EquippedChestArmorData", out var equippedChestArmorDataValue) && equippedChestArmorDataValue is Dictionary<string, object> equippedChestArmorDataDict)
+        {
+            EquippedChestArmorData = ConvertDictToUserItemData(equippedChestArmorDataDict);
+        }
+
+        if (dict.TryGetValue("EquippedBootsData", out var equippedBootsDataValue) && equippedBootsDataValue is Dictionary<string, object> equippedBootsDataDict)
+        {
+            EquippedBootsData = ConvertDictToUserItemData(equippedBootsDataDict);
+        }
+
+        if (dict.TryGetValue("EquippedGlovesData", out var equippedGlovesDataValue) && equippedGlovesDataValue is Dictionary<string, object> equippedGlovesDataDict)
+        {
+            EquippedGlovesData = ConvertDictToUserItemData(equippedGlovesDataDict);
+        }
+
+        if (dict.TryGetValue("EquippedAccessoryData", out var equippedAccessoryDataValue) && equippedAccessoryDataValue is Dictionary<string, object> equippedAccessoryDataDict)
+        {
+            EquippedAccessoryData = ConvertDictToUserItemData(equippedAccessoryDataDict);
+        }
+
+        if (dict.TryGetValue("InventoryItemDataList", out var inventoryItemDataListValue) && inventoryItemDataListValue is List<object> inventoryItemDataList)
+        {
+            InventoryItemDataList = ConvertDictToInventoryList(inventoryItemDataList);
+        }
+    }
+
+    private UserItemData ConvertDictToUserItemData(Dictionary<string, object> dict)
+    {
+        if (dict == null)
+        {
+            return null;
+        }
+
+        long itemSerialNumber = 0;
+        if (dict.TryGetValue("SerialNumber", out var serialNumberValue) && serialNumberValue is long serialNumber)
+        {
+            itemSerialNumber = serialNumber;
+        }
+
+        int itemId = 0;
+        if (dict.TryGetValue("ItemId", out var itemIdValue) && itemIdValue != null)
+        {
+            itemId = Convert.ToInt32(itemIdValue);
+        }
+
+        if (itemSerialNumber == 0 || itemId == 0)
+        {
+            return null;
+        }
+
+        return new UserItemData(itemSerialNumber, itemId);
+    }
+
+    private List<UserItemData> ConvertDictToInventoryList(List<object> list)
+    {
+        List<UserItemData> inventoryList = new List<UserItemData>();
+
+        foreach (var item in list)
+        {
+            if (item is Dictionary<string, object> itemDict)
+            {
+                inventoryList.Add(ConvertDictToUserItemData(itemDict));
+            }
+        }
+
+        return inventoryList;
     }
 }

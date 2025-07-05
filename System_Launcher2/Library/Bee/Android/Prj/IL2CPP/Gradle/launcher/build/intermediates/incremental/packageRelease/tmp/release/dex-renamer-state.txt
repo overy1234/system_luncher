@@ -1,4 +1,4 @@
-#Fri Jun 13 14:26:14 KST 2025
+#Fri Jul 04 08:20:38 KST 2025
 base.2=C\:\\system_luncher\\System_Launcher2\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes3.dex
 path.2=classes3.dex
 base.1=C\:\\system_luncher\\System_Launcher2\\Library\\Bee\\Android\\Prj\\IL2CPP\\Gradle\\launcher\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes2.dex

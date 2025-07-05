@@ -1,10 +1,10 @@
 <libraries>
   <library
       name=":@@:unityLibrary::release"
-      jars="C:\Users\overy\.gradle\caches\8.11\transforms\b5b07e33688989a081c1061c7e25e87b\transformed\out\jars\classes.jar;C:\Users\overy\.gradle\caches\8.11\transforms\b5b07e33688989a081c1061c7e25e87b\transformed\out\jars\libs\R.jar;C:\Users\overy\.gradle\caches\8.11\transforms\b5b07e33688989a081c1061c7e25e87b\transformed\out\jars\libs\unity-classes.jar"
+      jars="C:\Users\overy\.gradle\caches\8.11\transforms\4804d8357552684d5a7f97051996ac9c\transformed\out\jars\classes.jar;C:\Users\overy\.gradle\caches\8.11\transforms\4804d8357552684d5a7f97051996ac9c\transformed\out\jars\libs\R.jar;C:\Users\overy\.gradle\caches\8.11\transforms\4804d8357552684d5a7f97051996ac9c\transformed\out\jars\libs\unity-classes.jar"
       resolved="Gradle:unityLibrary:unspecified"
       partialResultsDir="C:\system_luncher\System_Launcher2\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\build\intermediates\lint_vital_partial_results\release\lintVitalAnalyzeRelease\out"
-      folder="C:\Users\overy\.gradle\caches\8.11\transforms\b5b07e33688989a081c1061c7e25e87b\transformed\out"
+      folder="C:\Users\overy\.gradle\caches\8.11\transforms\4804d8357552684d5a7f97051996ac9c\transformed\out"
       manifest="AndroidManifest.xml"
       resFolder="res"
       assetsFolder="assets"

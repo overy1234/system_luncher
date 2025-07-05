@@ -1,6 +1,7 @@
 using Firebase;
 using Firebase.Auth;
 using Firebase.Extensions;
+using Firebase.Firestore;
 using Firebase.RemoteConfig;
 using Google;
 using System;
@@ -23,7 +24,10 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
     private FirebaseUser m_FirebaseUser;
     public bool HasSignedInWithGoogle { get; private set; } = false;
     public bool HasSignedInWithApple { get; private set; } = false;
-
+    private string m_UnityEditorUserId = "lwFHQWjlXcc2Jivn8OHXI6GriIH3";
+    //Firestore Database
+    private FirebaseFirestore m_Database;
+    private bool m_IsFirestoreInit = false;
     protected override void Init()
     {
         base.Init();
@@ -34,7 +38,9 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
 
     public bool IsInit()
     {
-        return m_IsRemoteConfigInit && m_IsAuthInit;
+        return m_IsRemoteConfigInit
+            && m_IsAuthInit
+            && m_IsFirestoreInit;
     }
 
     private void LoadData()
@@ -62,6 +68,8 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
                 m_App = FirebaseApp.DefaultInstance;
                 InitRemoteConfig();
                 InitAuth();
+                InitFirestore();
+
             }
             else
             {
@@ -202,7 +210,7 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
         return m_FirebaseUser != null;
 #endif
     }
-    #endregion
+    
 
     public void SignInWithGoogle()
     {
@@ -281,4 +289,106 @@ public class FirebaseManager : SingletonBehaviour<FirebaseManager>
         };
         UIManager.Instance.OpenUI<ConfirmUI>(uiData);
     }
+
+
+    private string GetUserId()
+    {
+#if UNITY_EDITOR
+        return m_UnityEditorUserId;
+#else
+        return m_FirebaseUser != null ? m_FirebaseUser.UserId : string.Empty;
+#endif
+    }
+    #endregion
+
+    #region FIRESTORE
+    private void InitFirestore()
+    {
+        m_Database = FirebaseFirestore.DefaultInstance;
+        if (m_Database == null)
+        {
+            Logger.LogError($"FirebaseFirestore initialization faild. FirebaseFirestore is null.");
+            return;
+        }
+
+        m_IsFirestoreInit = true;
+    }
+
+    // [Collection]    [Document]   [Field]
+    //UserGoodsData --- UserId 1 --- Gem : 100
+    //                           --- Gold : 100
+    //              --- UserId 2 --- Gem : 200
+    //                           --- Gold : 200
+    //              --- UserId 3 --- Gem : 300
+    //                           --- Gold : 300
+    //UserSettingsData --- UserId 1 --- SFX : true
+    //                              --- BGM : true
+    //                 --- UserId 2 --- SFX : false
+    //                              --- BGM : false
+    //                 --- UserId 3 --- SFX : true
+    //                              --- BGM : false
+
+    public void LoadUserData<T>(Action onFinishLoad = null) where T : class, IUserData
+    {
+        Type type = typeof(T);
+        m_Database.Collection($"{type}").Document(GetUserId()).GetSnapshotAsync().ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                IUserData userData = UserDataManager.Instance.GetUserData<T>();
+                DocumentSnapshot snapshot = task.Result;
+                if (snapshot.Exists)
+                {
+                    Logger.Log($"{type} loaded successfully.");
+
+                    Dictionary<string, object> userDataDict = snapshot.ToDictionary();
+                    userData.SetData(userDataDict);
+                }
+                else
+                {
+                    Logger.Log($"No {type} found. Setting default data.");
+
+                    userData.SetDefaultData();
+                    userData.SaveData();
+                }
+
+                onFinishLoad?.Invoke();
+            }
+            else
+            {
+                Logger.LogError($"Failed to load {type}: {task.Exception}");
+            }
+        });
+    }
+
+
+    public void SaveUserData<T>(Dictionary<string, object> userDataDict) where T : class, IUserData
+    {
+        Type type = typeof(T);
+        DocumentReference docRef = m_Database.Collection($"{type}").Document(GetUserId());
+        docRef.SetAsync(userDataDict).ContinueWithOnMainThread(task =>
+        {
+            if (task.IsCompleted)
+            {
+                Logger.Log($"{type} saved successfully.");
+            }
+            else
+            {
+                Logger.LogError($"Failed to save {type}: {task.Exception}");
+            }
+        });
+    }
+    
+
+    protected override void Dispose()
+    {
+        if (m_Auth != null)
+        {
+            m_Auth.StateChanged -= OnAuthStateChanged;
+        }
+
+        base.Dispose();
+    }
+
+#endregion
 }

@@ -31,7 +31,7 @@ public class SettingsUI : BaseUI
         if (userSettingsData != null)
         {
             // 사운드 설정을 UI에 반영
-            SetSoundSetting(userSettingsData.Sound);
+            SetSoundSetting(userSettingsData.BGM);
         }
     }
 
@@ -66,13 +66,13 @@ public class SettingsUI : BaseUI
         if (userSettingsData != null)
         {
             // 사운드를 꺼짐으로 설정
-            userSettingsData.Sound = false;
+            userSettingsData.BGM = false;
             // 사용자 데이터 저장
             UserDataManager.Instance.SaveUserData();
             // 오디오 음소거
-            AudioManager.Instance.Mute();
+            AudioManager.Instance.MuteBGM();
             // UI에 사운드 설정 반영
-            SetSoundSetting(userSettingsData.Sound);
+            SetSoundSetting(userSettingsData.BGM);
         }
     }
 
@@ -91,13 +91,13 @@ public class SettingsUI : BaseUI
         if (userSettingsData != null)
         {
             // 사운드를 켜짐으로 설정
-            userSettingsData.Sound = true;
+            userSettingsData.BGM = true;
             // 사용자 데이터 저장
             UserDataManager.Instance.SaveUserData();
             // 오디오 음소거 해제
-            AudioManager.Instance.UnMute();
+            AudioManager.Instance.UnMuteBGM();
             // UI에 사운드 설정 반영
-            SetSoundSetting(userSettingsData.Sound);
+            SetSoundSetting(userSettingsData.BGM);
         }
     }
 

@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -14,6 +15,7 @@ public enum SFX
     ui_button_click,
     ui_get,
     ui_increase,
+    ui_button_start,
     COUNT
 }
 
@@ -35,6 +37,23 @@ public class AudioManager : SingletonBehaviour<AudioManager>
 
         LoadBGMPlayer();
         LoadSFXPlayer();
+    }
+
+    public void OnLoadLobby()
+    {
+        var userSettingsData = UserDataManager.Instance.GetUserData<UserSettingsData>();
+        if (userSettingsData != null)
+        {
+            if (!userSettingsData.BGM)
+            {
+                MuteBGM();
+            }
+
+            if (!userSettingsData.SFX)
+            {
+                MuteSFX();
+            }
+        }
     }
 
     private void LoadBGMPlayer()
@@ -61,42 +80,6 @@ public class AudioManager : SingletonBehaviour<AudioManager>
         }
     }
 
-    private void LoadSFXPlayer()
-    {
-        for (int i = 0; i < (int)SFX.COUNT; i++)
-        {
-            var audioName = ((SFX)i).ToString();
-            var pathStr = $"{AUDIO_PATH}/{audioName}";
-            var audioClip = Resources.Load(pathStr, typeof(AudioClip)) as AudioClip;
-            if (!audioClip)
-            {
-                Logger.LogError($"{audioName} clip does not exist.");
-                continue;
-            }
-
-            var newGO = new GameObject(audioName);
-            var newAudioSource = newGO.AddComponent<AudioSource>();
-            newAudioSource.clip = audioClip;
-            newAudioSource.loop = false;
-            newAudioSource.playOnAwake = false;
-            newGO.transform.parent = SFXTrs;
-
-            m_SFXPlayer[(SFX)i] = newAudioSource;
-        }
-    }
-
-    public void OnLoadUserData()
-    {
-        var userSettingsData = UserDataManager.Instance.GetUserData<UserSettingsData>();
-        if (userSettingsData != null)
-        {
-            if (!userSettingsData.Sound)
-            {
-                Mute();
-            }
-        }
-    }
-
     public void PlayBGM(BGM bgm)
     {
         if (m_CurrBGMSource)
@@ -107,7 +90,7 @@ public class AudioManager : SingletonBehaviour<AudioManager>
 
         if (!m_BGMPlayer.ContainsKey(bgm))
         {
-            Logger.LogError($"Invalid clip name. {bgm}");
+            Logger.LogError($"Invalid clip name. ({bgm})");
             return;
         }
 
@@ -130,6 +113,30 @@ public class AudioManager : SingletonBehaviour<AudioManager>
         if (m_CurrBGMSource) m_CurrBGMSource.Stop();
     }
 
+    private void LoadSFXPlayer()
+    {
+        //for (int i = 0; i < (int)SFX.COUNT; i++)
+        //{
+        //    var audioName = ((SFX)i).ToString();
+        //    var pathStr = $"{AUDIO_PATH}/{audioName}";
+        //    var audioClip = Resources.Load(pathStr, typeof(AudioClip)) as AudioClip;
+        //    if (!audioClip)
+        //    {
+        //        Logger.LogError($"{audioName} clip does not exist.");
+        //        continue;
+        //    }
+
+        //    var newGO = new GameObject(audioName);
+        //    var newAudioSource = newGO.AddComponent<AudioSource>();
+        //    newAudioSource.clip = audioClip;
+        //    newAudioSource.loop = false;
+        //    newAudioSource.playOnAwake = false;
+        //    newGO.transform.parent = SFXTrs;
+
+        //    m_SFXPlayer[(SFX)i] = newAudioSource;
+        //}
+    }
+
     public void PlaySFX(SFX sfx)
     {
         if (!m_SFXPlayer.ContainsKey(sfx))
@@ -141,26 +148,32 @@ public class AudioManager : SingletonBehaviour<AudioManager>
         m_SFXPlayer[sfx].Play();
     }
 
-    public void Mute()
+    public void MuteBGM()
     {
         foreach (var audioSourceItem in m_BGMPlayer)
         {
             audioSourceItem.Value.volume = 0f;
         }
+    }
 
+    public void UnMuteBGM()
+    {
+        foreach (var audioSourceItem in m_BGMPlayer)
+        {
+            audioSourceItem.Value.volume = 1f;
+        }
+    }
+
+    public void MuteSFX()
+    {
         foreach (var audioSourceItem in m_SFXPlayer)
         {
             audioSourceItem.Value.volume = 0f;
         }
     }
 
-    public void UnMute()
+    public void UnMuteSFX()
     {
-        foreach (var audioSourceItem in m_BGMPlayer)
-        {
-            audioSourceItem.Value.volume = 1f;
-        }
-
         foreach (var audioSourceItem in m_SFXPlayer)
         {
             audioSourceItem.Value.volume = 1f;

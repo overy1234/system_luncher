@@ -1,14 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-// 사용자 재화 데이터 관리 클래스
 public class UserGoodsData : IUserData
 {
-    // 보석 수량
+    public bool IsLoaded { get; set; }
+    //보석
     public long Gem { get; set; }
-    // 골드 수량
+    //골드
     public long Gold { get; set; }
 
-    // 기본값으로 초기화
     public void SetDefaultData()
     {
         Logger.Log($"{GetType()}::SetDefaultData");
@@ -17,55 +17,42 @@ public class UserGoodsData : IUserData
         Gold = 0;
     }
 
-    // PlayerPrefs에서 데이터 로드
-    public bool LoadData()
+    public void LoadData()
     {
         Logger.Log($"{GetType()}::LoadData");
 
-        bool result = false;
-
-        try
+        FirebaseManager.Instance.LoadUserData<UserGoodsData>(() =>
         {
-            // 저장된 재화 데이터 읽기
-            Gem = long.Parse(PlayerPrefs.GetString("Gem"));
-            Gold = long.Parse(PlayerPrefs.GetString("Gold"));
-            result = true;
-
-            Logger.Log($"Gem:{Gem} Gold:{Gold}");
-        }
-        catch (System.Exception e)
-        {
-            // 로드 실패 처리
-            Logger.Log("Load failed (" + e.Message + ")");
-        }
-
-        return result;
+            IsLoaded = true;
+        });
     }
 
-    // PlayerPrefs에 데이터 저장
-    public bool SaveData()
+    public void SaveData()
     {
         Logger.Log($"{GetType()}::SaveData");
 
-        bool result = false;
+        FirebaseManager.Instance.SaveUserData<UserGoodsData>(ConvertDataToFirestoreDict());
+    }
 
-        try
+    private Dictionary<string, object> ConvertDataToFirestoreDict()
+    {
+        Dictionary<string, object> dict = new Dictionary<string, object>
         {
-            // 재화 데이터 저장
-            PlayerPrefs.SetString("Gem", Gem.ToString());
-            PlayerPrefs.SetString("Gold", Gold.ToString());
-            PlayerPrefs.Save();
+            { "Gem", Gem },
+            { "Gold", Gold }
+        };
 
-            result = true;
+        return dict;
+    }
 
-            Logger.Log($"Gem:{Gem} Gold:{Gold}");
-        }
-        catch (System.Exception e)
-        {
-            // 저장 실패 처리
-            Logger.Log("Save failed (" + e.Message + ")");
-        }
+    public void SetData(Dictionary<string, object> firestoreDict)
+    {
+        ConvertFirestoreDictToData(firestoreDict);
+    }
 
-        return result;
+    private void ConvertFirestoreDictToData(Dictionary<string, object> dict)
+    {
+        if (dict.TryGetValue("Gem", out var gemValue) && gemValue is long gem) Gem = gem;
+        if (dict.TryGetValue("Gold", out var goldValue) && goldValue is long gold) Gold = gold;
     }
 }

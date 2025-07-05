@@ -1,66 +1,56 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-// 사용자 설정 데이터 관리 클래스
 public class UserSettingsData : IUserData
 {
-    // 사운드 on/off 설정
-    public bool Sound { get; set; }
+    public bool IsLoaded { get; set; }
+    public bool BGM { get; set; }
+    public bool SFX { get; set; }
 
-    // 기본값으로 초기화
     public void SetDefaultData()
     {
         Logger.Log($"{GetType()}::SetDefaultData");
 
-        Sound = true; // 사운드를 기본적으로 켜짐으로 설정
+        BGM = true;
+        SFX = true;
     }
 
-    // PlayerPrefs에서 설정 데이터 로드
-    public bool LoadData()
+    public void LoadData()
     {
         Logger.Log($"{GetType()}::LoadData");
 
-        bool result = false; // 로드 결과 저장용 변수
-
-        try
+        FirebaseManager.Instance.LoadUserData<UserSettingsData>(() =>
         {
-            // PlayerPrefs에서 사운드 설정을 int로 읽어와서 bool로 변환
-            Sound = PlayerPrefs.GetInt("Sound") == 1 ? true : false;
-            result = true; // 로드 성공
-
-            Logger.Log($"Sound:{Sound}");
-        }
-        catch (System.Exception e)
-        {
-            // 로드 실패 처리
-            Logger.Log("Load failed (" + e.Message + ")");
-        }
-
-        return result; // 로드 결과 반환
+            IsLoaded = true;
+        });
     }
 
-    // PlayerPrefs에 설정 데이터 저장
-    public bool SaveData()
+    public void SaveData()
     {
         Logger.Log($"{GetType()}::SaveData");
 
-        bool result = false; // 저장 결과 저장용 변수
+        FirebaseManager.Instance.SaveUserData<UserSettingsData>(ConvertDataToFirestoreDict());
+    }
 
-        try
+    private Dictionary<string, object> ConvertDataToFirestoreDict()
+    {
+        Dictionary<string, object> dict = new Dictionary<string, object>
         {
-            // bool 값을 int로 변환하여 PlayerPrefs에 저장
-            PlayerPrefs.SetInt("Sound", Sound ? 1 : 0);
-            PlayerPrefs.Save(); // 변경사항을 디스크에 저장
+            { "BGM", BGM },
+            { "SFX", SFX }
+        };
 
-            result = true; // 저장 성공
+        return dict;
+    }
 
-            Logger.Log($"Sound:{Sound}");
-        }
-        catch (System.Exception e)
-        {
-            // 저장 실패 처리
-            Logger.Log("Save failed (" + e.Message + ")");
-        }
+    public void SetData(Dictionary<string, object> firestoreDict)
+    {
+        ConvertFirestoreDictToData(firestoreDict);
+    }
 
-        return result; // 저장 결과 반환
+    private void ConvertFirestoreDictToData(Dictionary<string, object> dict)
+    {
+        if (dict.TryGetValue("BGM", out var bgmValue) && bgmValue is bool bgm) BGM = bgm;
+        if (dict.TryGetValue("SFX", out var sfxValue) && sfxValue is bool sfx) SFX = sfx;
     }
 }
